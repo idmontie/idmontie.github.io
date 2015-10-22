@@ -1,0 +1,32 @@
+<div class="column col-md-6">
+    <div class="card">
+        <div class="card-block">
+            <h4 class="card-title">{{ post.title }}</h4>
+        </div>
+        <div class="card-image" style="background-image:url('{{ post.image }}');">
+        </div>
+        <div class="card-block">
+            <p class="card-text">
+                {{ post.description }}
+            </p>
+            {% if post.view_link %}
+            <a class="btn btn-default" href="{{ post.view_link }}">View</a>
+            {% endif %}
+
+            {% if post.view_link %}
+            <a class="btn btn-default" href="{{ post.github_link }}">Github</a>
+            {% endif %}
+            <div>
+                {% for tag in post.language_tags %}
+                    <span class="label label-primary">{{ tag }}</span>
+                {% endfor %}
+                {% for tag in post.framework_tags %}
+                    <span class="label label-danger">{{ tag }}</span>
+                {% endfor %}
+                {% for tag in post.tool_tags %}
+                <span class="label label-warning">{{ tag }}</span>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

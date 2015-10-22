@@ -59,8 +59,26 @@ body {
     background-color: #D5ECFF;
 }
 
+.portfolio .row {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.portfolio .row > .column {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
 .card {
     background-color: #fefefe;
+    width: 100%;
 }
 
 .card-image {
