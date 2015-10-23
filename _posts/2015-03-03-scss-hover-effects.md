@@ -1,6 +1,6 @@
 ---
 title: SCSS Hover Effects
-image: images/project-scss-hover-effects.png
+image: /images/project-scss-hover-effects.png
 description: An extensible implementation of hover effects for SCSS.
 view_link: http://idmontie.github.io/hover-effects-scss/
 github_link: https://github.com/idmontie/hover-effects-scss

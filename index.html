@@ -6,7 +6,64 @@ description: "Projects, tools, and other awesome things Ivan Montiel has worked 
 <section class="jumbotron text-center">
     <div class="container">
         <h1 class="jumbotron-heading">Ivan Montiel</h1>
+        <p>
+            Full stack web application developer and designer.
+            Meteor enthusiast.
+            Augmented Reality experimenter.
+        </p>
+        <p>
+            <a class="btn btn-success" href="https://github.com/idmontie">Github</a>
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/ivanmontiel">LinkedIn</a>
+        </p>
+    </div>
+</section>
 
+<section class="tags">
+    <div class="container">
+        <div class="row">
+            {% capture language_tags %}
+                {% for post in site.posts %}
+                    {% for tag in post.language_tags %}
+                        {{ tag }},
+                    {% endfor %}
+                {% endfor %}
+            {% endcapture %}
+            {% capture framework_tags %}
+                {% for post in site.posts %}
+                    {% for tag in post.framework_tags %}
+                        {{ tag }},
+                    {% endfor %}
+                {% endfor %}
+            {% endcapture %}
+            {% capture tool_tags %}
+                {% for post in site.posts %}
+                    {% for tag in post.tool_tags %}
+                        {{ tag }},
+                    {% endfor %}
+                {% endfor %}
+            {% endcapture %}
+
+            <script>
+                var language_tags = "{{ language_tags }}";
+                var framework_tags = "{{ framework_tags }}";
+                var tool_tags = "{{ tool_tags }}";
+
+                language_tags.split(',').map(function(tag) {
+                    return tag.trim();
+                });
+
+                languages = {};
+                for (var i = 0; i < language_tags.length; i++) {
+                    var lang = language_tags[i];
+                    if(languages[lang]) {
+                        languages[lang]++;
+                    } else {
+                        languages[lang] = 1;
+                    }
+                }
+
+            </script>
+        </div>
     </div>
 </section>
 
@@ -25,8 +82,7 @@ description: "Projects, tools, and other awesome things Ivan Montiel has worked 
         <p class="pull-right">
             <a href="#">Back to top</a>
         </p>
-        <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-        <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
+        <p>Like this portfolio? Check it out on <a href="https://github.com/idmontie/idmontie.github.io">Github</a></p>
     </div>
 </footer>
 
