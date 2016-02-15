@@ -16,4 +16,4 @@ base_path: ""
 kramdown:
   input: GFM
   auto_ids: true
-highlighter: pygments
+highlighter: rouge
