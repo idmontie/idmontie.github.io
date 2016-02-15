@@ -13,7 +13,7 @@ language_tags:
 framework_tags:
     - meteor
     - react
-    - githup api
+    - github api
 ---
 
 This project aims to create a package which allows other projects to be gamified by adding points, awards, and/or levels.
