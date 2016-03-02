@@ -1,38 +1,35 @@
 {% include header.html %}
 {% include nav.html %}
-<section class="jumbotron text-center">
-    <div class="container">
-        <h1 class="jumbotron-heading">{{ page.title }}</h1>
-        <p>
-            {{ page.description }}
-        </p>
-        <p>
-            {% if page.view_link %}
-            <a class="btn btn-primary" href="{{ page.view_link }}">View</a>
-            {% endif %}
-
-            {% if page.github_link %}
-            <a class="btn btn-primary" href="{{ page.github_link }}">Github</a>
-            {% endif %}
-        </p>
-        <p>
-            {% for tag in page.language_tags %}
-            <span class="label label-primary">{{ tag }}</span>
-            {% endfor %}
-            {% for tag in page.framework_tags %}
-            <span class="label label-danger">{{ tag }}</span>
-            {% endfor %}
-            {% for tag in page.tool_tags %}
-            <span class="label label-warning">{{ tag }}</span>
-            {% endfor %}
-        </p>
-    </div>
-</section>
 <section class="post-content">
     <div class="post-content__container">
-        <div class="post-content__container__hero" style="background-image:url('{{ page.image }}');">
-        </div>
+		<img src="{{ page.image }}" class="img-responsive" style="max-width: 100%; height: auto; display: block; margin-top: 30px;">
+	
         <div class="post-content__content">
+			<h1>{{ page.title }}</h1>
+			<p>
+				{{ page.description }}
+			</p>
+			<p>
+				{% if page.view_link %}
+				<a class="btn btn-primary" href="{{ page.view_link }}">View</a>
+				{% endif %}
+
+				{% if page.github_link %}
+				<a class="btn btn-primary" href="{{ page.github_link }}">Github</a>
+				{% endif %}
+			</p>
+			<p>
+				{% for tag in page.language_tags %}
+				<span class="label label-primary">{{ tag }}</span>
+				{% endfor %}
+				{% for tag in page.framework_tags %}
+				<span class="label label-danger">{{ tag }}</span>
+				{% endfor %}
+				{% for tag in page.tool_tags %}
+				<span class="label label-warning">{{ tag }}</span>
+				{% endfor %}
+			</p>
+		
             {{ content }}
 
             <div class="post-content__footer">
