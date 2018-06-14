@@ -9,10 +9,10 @@ language_tags:
     - es2015+
     - css
 framework_tags:
-    - meteor
+    - aws
     - react
-    - reflux
-    - bootstrap
+    - serverless
+    - redux
 ---
 
 Clarity Hub finds the best answers that have worked in the past and suggests them to teams using Intercom when answering similar questions.
