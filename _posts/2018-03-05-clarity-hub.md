@@ -2,7 +2,7 @@
 title: Clarity Hub
 description: >
     Clarity Hub finds the best answers that have worked in the past and suggests them to teams using Intercom when answering similar questions.
-image: /images/project-clarityhub.png
+image: /images/project-clarity-hub.png
 view_link: https://clarityhub.io
 language_tags:
     - javascript
