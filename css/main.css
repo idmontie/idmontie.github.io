@@ -78,11 +78,18 @@
 
 .card {
     background-color: #fefefe;
+    margin-bottom: 20px;
     width: 100%;
+}
+
+.card-block {
+    padding: 20px;
 }
 
 .card-title a {
     color: black;
+    display: block;
+    padding: 20px;
     text-decoration: none;
 }
 

@@ -16,11 +16,11 @@
                 {{ post.description }}
             </p>
             {% if post.view_link %}
-            <a class="btn btn-default" href="{{ post.view_link }}">View</a>
+            <a class="btn btn-primary" href="{{ post.view_link }}">View</a>
             {% endif %}
 
             {% if post.view_link %}
-            <a class="btn btn-default" href="{{ post.github_link }}">Github</a>
+            <a class="btn btn-success" href="{{ post.github_link }}">Github</a>
             {% endif %}
             <div>
                 {% for tag in post.language_tags %}
