@@ -1,33 +1,44 @@
 {
-  "extends": "nx/presets/npm.json",
-  "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "nx/tasks-runners/default",
-      "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
-      }
-    }
-  },
-  "targetDefaults": {
-    "test": {
-      "inputs": ["default", "^default", "{workspaceRoot}/jest.preset.js"]
+    "extends": "nx/presets/npm.json",
+    "$schema": "./node_modules/nx/schemas/nx-schema.json",
+    "tasksRunnerOptions": {
+        "default": {
+            "runner": "@nrwl/nx-cloud",
+            "options": {
+                "cacheableOperations": [
+                    "build",
+                    "lint",
+                    "test",
+                    "e2e",
+                    "build-storybook"
+                ],
+                "accessToken": "NDlmZWU0MTUtOWUwYi00OWI0LTgzMmQtNDBmMWMwYTliZjIzfHJlYWQtd3JpdGU="
+            }
+        }
     },
-    "lint": {
-      "inputs": ["default", "{workspaceRoot}/.eslintrc.json"]
-    }
-  },
-  "generators": {
-    "@nrwl/react": {
-      "application": {
-        "babel": true
-      }
+    "targetDefaults": {
+        "build": {
+            "dependsOn": ["^build"]
+        },
+        "test": {
+            "inputs": ["default", "^default", "{workspaceRoot}/jest.preset.js"]
+        },
+        "lint": {
+            "inputs": ["default", "{workspaceRoot}/.eslintrc.json"]
+        }
     },
-    "@nrwl/next": {
-      "application": {
-        "style": "css",
-        "linter": "eslint"
-      }
-    }
-  }
+    "generators": {
+        "@nrwl/react": {
+            "application": {
+                "babel": true
+            }
+        },
+        "@nrwl/next": {
+            "application": {
+                "style": "css",
+                "linter": "eslint"
+            }
+        }
+    },
+    "defaultProject": "main"
 }
