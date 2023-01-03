@@ -4,6 +4,7 @@ description: >
     Clarity Hub finds the best answers that have worked in the past and suggests them to teams using Intercom when answering similar questions.
 image: /images/project-clarity-hub.png
 view_link: https://clarityhub.io
+github_link: https://github.com/clarityhub
 language_tags:
     - javascript
     - es2015+

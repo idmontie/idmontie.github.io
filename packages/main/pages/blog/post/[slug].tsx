@@ -5,6 +5,7 @@ import type { Post } from "nextjs-blog-lib";
 import { useClientSideValue } from "modules/utilities/useClientSideValue";
 import { RenderMarkdown } from "modules/blog/components/RenderMarkdown";
 import { blog } from "modules/blog/blog.server";
+import PageHeader from "modules/base/PageHeader";
 
 export interface BlogSlugProps {
     headTitle: string;
@@ -21,20 +22,22 @@ function BlogSlug({ headTitle, post, previous, next }: BlogSlugProps) {
     return (
         <div>
             <Head>
-                <title>{headTitle}</title>
+                <title>{headTitle} - idmontie&apos;s Portfolio</title>
                 <meta name="description" content={post.excerptHTML} />
             </Head>
-            <div>
-                <div>{post.title}</div>
-                <div>
-                    <div>
-                        <div>Posted: {clientSideDate}</div>
+            <article className="px-6 md:px-0">
+                <header>
+                    <PageHeader>{post.title}</PageHeader>
+
+                    <div className="mb-6 text-sm">Posted: {clientSideDate}</div>
+                </header>
+                <main>
+                    <div className="prose dark:prose-dark">
                         <RenderMarkdown
                             html={post.contentHTML}
                             code={post.contentCode}
                         />
                     </div>
-
                     <div>
                         {previous ? (
                             <Link href={`/blog/post/${previous.slug}`}>
@@ -51,8 +54,8 @@ function BlogSlug({ headTitle, post, previous, next }: BlogSlugProps) {
                             <div />
                         )}
                     </div>
-                </div>
-            </div>
+                </main>
+            </article>
         </div>
     );
 }
@@ -81,7 +84,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
     return {
         props: {
-            headTitle: `${postData.post.title} - Capsule Cat`,
+            headTitle: `${postData.post.title} - idmontie's Portfolio`,
             post: postData.post,
             previous: postData.previous,
             next: postData.next,

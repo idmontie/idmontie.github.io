@@ -5,6 +5,7 @@ import Head from "next/head";
 import { GoogleAnalytics, event } from "nextjs-google-analytics";
 import { FullScreenErrorBoundary } from "modules/app/components/ErrorBoundary";
 import "./styles.css";
+import { AppLayout } from "modules/app/components/AppLayout";
 
 const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
@@ -40,16 +41,18 @@ function CustomApp({ Component, pageProps }: AppProps) {
                 {/* eslint-disable-next-line @typescript-eslint/no-unsafe-member-access */}
                 <Hydrate state={pageProps.dehydratedState}>
                     <Head>
-                        <title>Nx NextJS Starter</title>
+                        <title>idmontie&apos;s Portfolio</title>
                         <meta
                             name="description"
                             content="Starter kit for NextJS with Nx"
                         />
                         <meta charSet="utf8" />
                     </Head>
-                    <main className="app">
-                        <Component {...pageProps} />
-                    </main>
+                    <AppLayout>
+                        <main className="app">
+                            <Component {...pageProps} />
+                        </main>
+                    </AppLayout>
                 </Hydrate>
             </AppProviders>
         </FullScreenErrorBoundary>

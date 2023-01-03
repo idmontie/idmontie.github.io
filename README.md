@@ -1,4 +1,4 @@
-# Nx NextJS Starter
+# idmontie.github.io
 
 ## Getting Started
 

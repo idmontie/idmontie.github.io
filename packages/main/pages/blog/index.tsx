@@ -6,6 +6,7 @@ import type { Post } from "nextjs-blog-lib";
 import { PAGE_SIZE } from "modules/blog/blog";
 import { PostPreviewItem } from "modules/blog/components/PostPreviewItem";
 import { blog } from "modules/blog/blog.server";
+import PageHeader from "modules/base/PageHeader";
 
 export interface BlogIndexProps {
     hasPreviousPage: boolean;
@@ -16,14 +17,13 @@ function BlogIndex({ hasPreviousPage, posts }: BlogIndexProps) {
     return (
         <div>
             <Head>
-                <title>Blog - Capsule Cat</title>
-                <meta
-                    name="description"
-                    content="Blog posts for the latest updates on Capsule Cat"
-                />
+                <title>Blog - idmontie&apos;s Portfolio</title>
+                <meta name="description" content="Latest blog posts" />
             </Head>
             <div>
-                <div>Blog</div>
+                <header>
+                    <PageHeader>Blog</PageHeader>
+                </header>
 
                 <div>
                     {posts.map((post) => {

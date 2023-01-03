@@ -17,10 +17,18 @@ export const getPostBySlug = memoize(async function (
     const fullPath = join(folderPath, "index.mdx");
     const backupPath = join(folderPath, "index.md");
 
-    // Check which file exists
-    const path = fs.existsSync(fullPath) ? fullPath : backupPath;
+    let filePath;
 
-    const fileContents = fs.readFileSync(path, "utf8");
+    // Check if path is a folder or a file
+    if (fs.lstatSync(folderPath).isFile()) {
+        filePath = folderPath;
+    } else if (fs.existsSync(fullPath)) {
+        filePath = fullPath;
+    } else {
+        filePath = backupPath;
+    }
+
+    const fileContents = fs.readFileSync(filePath, "utf8");
 
     const newContents = options.rewriteMediaUrls
         ? rewriteMedias(
