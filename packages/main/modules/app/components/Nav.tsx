@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { ThemeToggle } from "./ThemeToggle";
 
 export function Nav() {
     const router = useRouter();
@@ -16,34 +17,35 @@ export function Nav() {
     })();
 
     return (
-        <nav className="width-full border-bottom bg-gray-light p-3">
-            <div className="container-lg d-flex flex-justify-between px-3">
-                <div className="d-flex">
-                    <Link
-                        href="/"
-                        className={classNames({
-                            "text-bold": activeLink === "Home",
-                        })}
-                    >
-                        Home
-                    </Link>
-                    <Link
-                        href="/blog"
-                        className={classNames({
-                            "text-bold": activeLink === "Blog",
-                        })}
-                    >
-                        Blog
-                    </Link>
-                    <Link
-                        href="/portfolio"
-                        className={classNames({
-                            "text-bold": activeLink === "Portfolio",
-                        })}
-                    >
-                        Portfolio
-                    </Link>
-                </div>
+        <nav className="flex items-center p-3">
+            <div className="flex-1 space-x-4">
+                <Link
+                    href="/"
+                    className={classNames({
+                        "font-bold": activeLink === "Home",
+                    })}
+                >
+                    Home
+                </Link>
+                <Link
+                    href="/blog"
+                    className={classNames({
+                        "font-bold": activeLink === "Blog",
+                    })}
+                >
+                    Blog
+                </Link>
+                <Link
+                    href="/portfolio"
+                    className={classNames({
+                        "font-bold": activeLink === "Portfolio",
+                    })}
+                >
+                    Portfolio
+                </Link>
+            </div>
+            <div className="flex flex-1 justify-end">
+                <ThemeToggle />
             </div>
         </nav>
     );

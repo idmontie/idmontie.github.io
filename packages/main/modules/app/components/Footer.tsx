@@ -1,8 +1,8 @@
 export function Footer() {
     return (
-        <footer className="width-full border-top bg-gray-light p-3">
-            <div className="container-lg d-flex flex-justify-between px-3">
-                <div className="d-flex">
+        <footer className="width-full border-top bg-gray-light my-4 p-4">
+            <div className="flex-justify-between flex px-3 text-gray-700 dark:text-gray-300">
+                <div className="flex-1">
                     Like this blog and portfolio? Check it out on{" "}
                     <a
                         href="https://github.com/idmontie/idmontie.github.io"
@@ -12,7 +12,7 @@ export function Footer() {
                         Github
                     </a>
                 </div>
-                <div className="d-flex justify-content-end">
+                <div className="flex self-end">
                     <button
                         onClick={() => {
                             window.scrollTo(0, 0);

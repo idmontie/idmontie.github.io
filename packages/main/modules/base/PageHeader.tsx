@@ -6,7 +6,7 @@ export interface PageHeaderProps {
 
 export default function PageHeader({ children }: PageHeaderProps) {
     return (
-        <h1 className="mb-12 text-center text-3xl font-bold dark:text-white md:text-5xl">
+        <h1 className="my-8 text-center text-3xl font-bold dark:text-white md:text-5xl">
             {children}
         </h1>
     );

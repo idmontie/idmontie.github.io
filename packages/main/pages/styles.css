@@ -27,6 +27,11 @@ body {
     border-color: currentColor;
 }
 
+.prose a {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
 .prose p,
 .prose ul {
     font-family: "Merriweather", serif;

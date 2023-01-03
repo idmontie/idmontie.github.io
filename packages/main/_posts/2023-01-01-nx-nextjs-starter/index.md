@@ -4,7 +4,7 @@ title: NX NextJS Starter
 
 To kickstart the year, I created a repo that contains a simple starter kit for using NextJS with NX. You can see the repo here:
 
-https://github.com/idmontie/nx-nextjs-starter
+[Github](https://github.com/idmontie/nx-nextjs-starter)
 
 This personal Github page is built using this starter kit. I wanted to create a starter kit that was simple and easy to use and also has a lot of eslint and Typescript configuration setup. I've also been working on revamping the website for Dark Emblem - my NFT side-project. The starter kit is based on the linting rules and Typescript set up that I've been using for that project.
 
@@ -25,4 +25,4 @@ My last few projects have been Single Page Apps (SPAs) or statically generated s
 
 Overall the starter kit is a pretty simple example. It just containers preconfigured Nx, husky, lint-staged, eslint, prettier, Typescript, and NextJS. It does not contain any UI components or anything like that. It's just a simple starter kit to get you up and running with a monorepo NextJS project.
 
-Feel free to check it out at https://github.com/idmontie/nx-nextjs-starter.
+Feel free to check it out at [Github](https://github.com/idmontie/nx-nextjs-starter).

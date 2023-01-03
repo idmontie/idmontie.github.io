@@ -39,9 +39,13 @@ function ProjectSlug({ headTitle, project, next, previous }: ProjectSlugProps) {
                 <header>
                     <PageHeader>{project.title}</PageHeader>
 
-                    <div className="mb-4">
+                    <div className="mb-4 text-center">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img src={image} alt={project.title} />
+                        <img
+                            src={image}
+                            alt={project.title}
+                            className="m-auto"
+                        />
                     </div>
 
                     <div className="py-4">
@@ -89,7 +93,7 @@ function ProjectSlug({ headTitle, project, next, previous }: ProjectSlugProps) {
                         />
                     </div>
                 </main>
-                {/* space out left and right */}
+
                 <footer className="mt-8">
                     <div className="flex justify-between">
                         {previous ? (

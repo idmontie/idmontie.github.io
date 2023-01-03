@@ -6,6 +6,7 @@ import { useClientSideValue } from "modules/utilities/useClientSideValue";
 import { RenderMarkdown } from "modules/blog/components/RenderMarkdown";
 import { blog } from "modules/blog/blog.server";
 import PageHeader from "modules/base/PageHeader";
+import { OutlineButton } from "modules/base/OutlineButton";
 
 export interface BlogSlugProps {
     headTitle: string;
@@ -38,22 +39,32 @@ function BlogSlug({ headTitle, post, previous, next }: BlogSlugProps) {
                             code={post.contentCode}
                         />
                     </div>
-                    <div>
-                        {previous ? (
-                            <Link href={`/blog/post/${previous.slug}`}>
-                                Newer post: {previous.title}
-                            </Link>
-                        ) : (
-                            <div />
-                        )}
-                        {next ? (
-                            <Link href={`/blog/post/${next.slug}`}>
-                                Older post: {next.title}
-                            </Link>
-                        ) : (
-                            <div />
-                        )}
-                    </div>
+                    <footer className="mt-8">
+                        <div className="flex justify-between">
+                            {previous ? (
+                                <OutlineButton
+                                    as={Link}
+                                    href={`/blog/post/${previous.slug}`}
+                                >
+                                    <span className="mr-2">←</span>
+                                    {previous.title}
+                                </OutlineButton>
+                            ) : (
+                                <div />
+                            )}
+                            {next ? (
+                                <OutlineButton
+                                    as={Link}
+                                    href={`/blog/post/${next.slug}`}
+                                >
+                                    {next.title}
+                                    <span className="ml-2">→</span>
+                                </OutlineButton>
+                            ) : (
+                                <div />
+                            )}
+                        </div>
+                    </footer>
                 </main>
             </article>
         </div>

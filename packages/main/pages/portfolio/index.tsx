@@ -7,7 +7,6 @@ import PageHeader from "modules/base/PageHeader";
 import { ProjectPreviewItem } from "modules/portfolio/components/ProjectPreviewItem";
 
 export interface ProjectIndexProps {
-    hasPreviousPage: boolean;
     projects: Post[];
 }
 
@@ -18,13 +17,12 @@ function ProjectIndex({ projects }: ProjectIndexProps) {
                 <title>Projects - idmontie&apos;s Portfolio</title>
                 <meta name="description" content="Latest projects" />
             </Head>
-            <div>
+            <div className="px-4">
                 <header>
                     <PageHeader>Portfolio</PageHeader>
                 </header>
 
-                {/* 2 column grid */}
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                     {projects.map((project) => {
                         return (
                             <ProjectPreviewItem

@@ -1,3 +1,4 @@
+import { Card } from "modules/base/Card";
 import { useClientSideValue } from "modules/utilities/useClientSideValue";
 import Link from "next/link";
 import { Post } from "nextjs-blog-lib";
@@ -13,16 +14,24 @@ export function PostPreviewItem({ post }: PostPreviewItemProps) {
     });
 
     return (
-        <div>
-            <div>{post.title}</div>
-            <div>{clientSideDate}</div>
-            <div>
-                <RenderMarkdown
-                    html={post.excerptHTML}
-                    code={post.excerptCode}
-                />
+        <Card>
+            <div className="p-4">
+                <Link href={`/blog/post/${post.slug}`}>
+                    <h2 className="text-xl font-bold">{post.title}</h2>
+                </Link>
+                <div className="py-2 text-sm">{clientSideDate}</div>
+                <div className="prose dark:prose-dark py-4">
+                    <RenderMarkdown
+                        html={post.excerptHTML}
+                        code={post.excerptCode}
+                    />
+                </div>
+                <div className="pt-2">
+                    <Link href={`/blog/post/${post.slug}`}>
+                        Continue reading<span className="ml-2">→</span>
+                    </Link>
+                </div>
             </div>
-            <Link href={`/blog/post/${post.slug}`}>Continue reading</Link>
-        </div>
+        </Card>
     );
 }

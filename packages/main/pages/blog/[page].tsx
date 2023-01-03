@@ -25,12 +25,12 @@ function BlogPage({ hasPreviousPage, hasNextPage, posts }: BlogIndexProps) {
                 <title>Blog Page {page} - idmontie&apos;s Portfolio</title>
                 <meta name="description" content="Latest blog posts" />
             </Head>
-            <div>
+            <div className="px-4">
                 <header>
                     <PageHeader>Blog Page {page}</PageHeader>
                 </header>
 
-                <div>
+                <div className="space-y-4">
                     {posts.map((post) => {
                         return <PostPreviewItem post={post} key={post.slug} />;
                     })}

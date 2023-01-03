@@ -16,11 +16,21 @@ jest.mock("next/router", () => ({
     },
 }));
 
+// Mock mdx-js
+jest.mock("@mdx-js/mdx", () => ({
+    compile: function () {
+        return;
+    },
+    run: function () {
+        return;
+    },
+}));
+
 describe("Index", () => {
     it("should render successfully", () => {
         const { baseElement } = render(
             <AppProviders>
-                <Index />
+                <Index posts={[]} projects={[]} />
             </AppProviders>
         );
         expect(baseElement).toBeTruthy();
