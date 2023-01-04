@@ -13,6 +13,14 @@ jobs:
           node-version: '16'
           cache: 'npm'
       - run: npm ci
+      - name: Make envfile
+        uses: SpicyPizza/create-envfile@v1.3
+        with:
+          envkey_NEXT_PUBLIC_BUGSNAG_API_KEY: ${{ secrets.BUGSNAG_KEY }}
+          envkey_NEXT_PUBLIC_GA_MEASUREMENT_ID: ${{ secrets.GA_MEASUREMENT_ID }}
+          directory: ./packages/main
+          file_name: .env
+          fail_on_empty: false
       - run: npm run build
       - run: npm run export
       - uses: actions/upload-artifact@v3
