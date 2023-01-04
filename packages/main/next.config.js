@@ -13,6 +13,7 @@ const nextConfig = {
         svgr: false,
     },
     outputFileTracing: true,
+    swcMinify: false,
 };
 
 module.exports = withNx(nextConfig);
