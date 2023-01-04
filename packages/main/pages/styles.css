@@ -1,0 +1,72 @@
+@tailwind components;
+@tailwind base;
+@tailwind utilities;
+
+html {
+    -webkit-text-size-adjust: 100%;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5;
+    tab-size: 4;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: inherit;
+    line-height: inherit;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: currentColor;
+}
+
+.prose a {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+.prose p,
+.prose ul {
+    font-family: "Merriweather", serif;
+}
+
+.prose h2,
+.prose h3,
+.prose h4 {
+    font-family: "Open Sans", sans-serif;
+    margin-top: 2rem;
+}
+
+.prose h2 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.prose h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.prose h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.prose ul {
+    list-style: disc;
+    margin-left: 2rem;
+}
+
+.prose * + * {
+    margin-top: 1rem;
+}
