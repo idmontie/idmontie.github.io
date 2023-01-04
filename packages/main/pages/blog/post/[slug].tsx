@@ -23,7 +23,7 @@ function BlogSlug({ headTitle, post, previous, next }: BlogSlugProps) {
     return (
         <div>
             <Head>
-                <title>{headTitle} - idmontie&apos;s Portfolio</title>
+                <title>{headTitle}</title>
                 <meta name="description" content={post.excerptHTML} />
             </Head>
             <article className="px-6 md:px-0">
