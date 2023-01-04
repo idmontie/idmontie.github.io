@@ -13,6 +13,7 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npm run build
+      - run: npm run export
       - uses: actions/upload-artifact@v3
         with:
           name: ui-dist
@@ -30,8 +31,11 @@ jobs:
         with:
           name: ui-dist
           path: dist
-
-    # TODO your deployment step here
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist/packages/main/exported
   healthcheck:
     needs: [site]
     runs-on: ubuntu-latest
@@ -40,8 +44,7 @@ jobs:
         uses: jtalk/url-health-check-action@v3
         with:
           # Check the following URLs one by one sequentially
-          # TODO your site endpoint here
-          url: https://google.com
+          url: https://idmontie.github.io
           follow-redirect: false
           max-attempts: 3
           retry-delay: 5s
