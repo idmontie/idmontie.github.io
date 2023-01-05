@@ -11,7 +11,7 @@ export function AppLayout({ children }: AppLayoutProps) {
         <>
             <Nav />
             <div className="relative overflow-hidden pb-4">
-                <div className="mx-auto flex w-full max-w-2xl flex-col items-center">
+                <div className="mx-auto flex w-full max-w-screen-md flex-col items-center">
                     {children}
                 </div>
             </div>

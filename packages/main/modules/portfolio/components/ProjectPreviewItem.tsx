@@ -18,7 +18,7 @@ export function ProjectPreviewItem({ project }: ProjectPreviewItemProps) {
             </div>
             <Link href={`/projects/${project.slug}`}>
                 <div
-                    className="ml-[-2%] w-[104%] bg-cover bg-center pb-[20vw] shadow-md"
+                    className="ml-[-1%] w-[102%] bg-cover bg-center pb-[20vw] shadow-md"
                     style={{
                         backgroundImage: `url('${
                             project.frontmatter.image as string
