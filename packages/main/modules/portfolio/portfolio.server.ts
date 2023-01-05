@@ -1,6 +1,7 @@
 import { join } from "path";
 import { BlogOptions, createBlog } from "nextjs-blog-lib";
 import { components } from "../blog/blog";
+import { compiler, runner } from "modules/blog/blog.server";
 
 const projectOptions: Partial<BlogOptions> = {
     postsDirectory: join(process.cwd(), "packages", "main", "_projects"),
@@ -15,6 +16,8 @@ const projectOptions: Partial<BlogOptions> = {
     },
     mdx: {
         components,
+        compile: compiler,
+        run: runner,
     },
 };
 
