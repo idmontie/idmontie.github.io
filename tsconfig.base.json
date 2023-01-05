@@ -7,10 +7,6 @@
         "strict": true,
         "skipLibCheck": true,
         "paths": {
-            "nextjs-blog-lib": [
-                "packages/nextjs-blog-lib/src/index.ts",
-                "../nextjs-blog-lib/src/index.ts"
-            ]
         }
     }
 }
