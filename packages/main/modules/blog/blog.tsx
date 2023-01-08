@@ -1,3 +1,5 @@
+import { Mermaid, MermaidProps } from "mdx-mermaid/lib/Mermaid";
+
 export const components = {
     img: ({ src, alt, ...props }: { alt?: string; src: string }) => {
         return (
@@ -14,6 +16,13 @@ export const components = {
                     }}
                 />
             </>
+        );
+    },
+    Mermaid: (props: MermaidProps) => {
+        return (
+            <div className="py-8 [&_svg]:m-auto">
+                <Mermaid {...props} />
+            </div>
         );
     },
 };

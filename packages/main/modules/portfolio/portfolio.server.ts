@@ -13,6 +13,7 @@ const projectOptions: Partial<BlogOptions> = {
             "public",
             "media"
         ),
+        relativeDirectory: "/media",
     },
     mdx: {
         components,

@@ -3,15 +3,26 @@ import { BlogOptions, createBlog } from "nextjs-blog-lib";
 import { compile, run } from "@mdx-js/mdx";
 import * as runtime from "react/jsx-runtime";
 import { components } from "./blog";
+import mdxMermaid from "mdx-mermaid";
+import removeImports from "remark-mdx-remove-imports";
 
 export const compiler = async (mdx: string) => {
     const inter = String(
         await compile(mdx, {
             outputFormat: "function-body",
             useDynamicImport: true,
+            remarkPlugins: [mdxMermaid, removeImports],
         })
     );
-    return inter.replaceAll("jsxDEV", "jsx");
+
+    // Hack to remove the import of Mermaid
+    // Hack to replace invalid jsxDEV import when in dev mode
+    return inter
+        .replaceAll("jsxDEV", "jsx")
+        .replaceAll(
+            `children: "import { Mermaid } from 'mdx-mermaid/lib/Mermaid';"`,
+            ""
+        );
 };
 
 export const runner = async (code: string) => {
@@ -36,6 +47,7 @@ const blogOptions: Partial<BlogOptions> = {
             "public",
             "media"
         ),
+        relativeDirectory: "/media",
     },
     mdx: {
         components,

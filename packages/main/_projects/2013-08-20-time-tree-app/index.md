@@ -5,8 +5,8 @@ description: >
     two different taxa and find out when they
     diverged on an interactive timeline.
 image: /images/project-time-tree-of-life-app.png
-langauge_tags:
+language_tags:
     - c#
-tool_tags:
+framework_tags:
     - unity
 ---
