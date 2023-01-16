@@ -2,7 +2,9 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=nextjs,react,node
 
 ### Generated media folder ###
-public/media
+packages/main/public/media/**
+!packages/main/public/media
+!packages/main/public/media/.gitkeep
 
 ### legacy site ###
 _site
