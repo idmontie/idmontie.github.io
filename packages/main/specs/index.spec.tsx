@@ -26,6 +26,13 @@ jest.mock("@mdx-js/mdx", () => ({
     },
 }));
 
+// Mock remark-gfm
+jest.mock("remark-gfm", () => ({
+    remarkGfm: function () {
+        return;
+    },
+}));
+
 describe("Index", () => {
     it("should render successfully", () => {
         const { baseElement } = render(

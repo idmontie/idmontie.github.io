@@ -25,7 +25,7 @@ function BlogIndex({ hasPreviousPage, posts }: BlogIndexProps) {
                     <PageHeader>Blog</PageHeader>
                 </header>
 
-                <div className="space-y-4">
+                <div className="space-y-6">
                     {posts.map((post) => {
                         return <PostPreviewItem post={post} key={post.slug} />;
                     })}

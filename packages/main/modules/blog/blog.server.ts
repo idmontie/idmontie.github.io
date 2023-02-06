@@ -5,13 +5,14 @@ import * as runtime from "react/jsx-runtime";
 import { components } from "./blog";
 import mdxMermaid from "mdx-mermaid";
 import removeImports from "remark-mdx-remove-imports";
+import remarkGfm from "remark-gfm";
 
 export const compiler = async (mdx: string) => {
     const inter = String(
         await compile(mdx, {
             outputFormat: "function-body",
             useDynamicImport: true,
-            remarkPlugins: [mdxMermaid, removeImports],
+            remarkPlugins: [remarkGfm, mdxMermaid, removeImports],
         })
     );
 
