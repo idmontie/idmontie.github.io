@@ -79,3 +79,18 @@ body {
 .prose li + li {
     margin-top: 0.25rem;
 }
+
+.messageText {
+    fill: white !important;
+}
+
+.flowchart-link,
+line[class^=messageLine] {
+    stroke: white !important;
+}
+
+#flowchart-pointEnd path,
+#arrowhead path {
+    fill: white !important;
+    stroke: white !important;
+}
