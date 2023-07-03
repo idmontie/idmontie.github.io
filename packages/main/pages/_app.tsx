@@ -49,7 +49,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
                         <meta charSet="utf8" />
                     </Head>
                     <AppLayout>
-                        <main className="app">
+                        <main className="app max-w-full">
                             <Component {...pageProps} />
                         </main>
                     </AppLayout>

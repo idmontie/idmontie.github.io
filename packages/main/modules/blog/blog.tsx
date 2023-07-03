@@ -1,4 +1,5 @@
 import { Mermaid, MermaidProps } from "mdx-mermaid/lib/Mermaid";
+import { ComponentProps } from "react";
 
 export const components = {
     img: ({ src, alt, ...props }: { alt?: string; src: string }) => {
@@ -16,6 +17,13 @@ export const components = {
                     }}
                 />
             </>
+        );
+    },
+    pre: (props: ComponentProps<"pre">) => {
+        return (
+            <div className="overflow-auto">
+                <pre {...props} />
+            </div>
         );
     },
     Mermaid: (props: MermaidProps) => {
