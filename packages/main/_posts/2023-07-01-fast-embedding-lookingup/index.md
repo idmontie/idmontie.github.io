@@ -35,3 +35,7 @@ This approach begins to break down as the cosine similarity to the unit vector c
 One solution to workaround this could be to pre-compute the similarity of a vector against unit vectors for each dimension of the input vector. But this could be 512 or more cosine similarity calculations for modern embeddings just to precompute the data. Once all unit vector similarities are calculated and stored, the range query against the database would be made against the column for which the input vector’s similarity is closest to 0.
 
 There are a lot of real solutions to this problem, but this was a fun exercise to think about and work on.
+
+## Further reading
+
+Vector similarity search is becoming increasingly popular and integrated into databases. Here are some resources to learn more: [Vector Similarity Search](https://zilliz.com/blog/vector-similarity-search).
