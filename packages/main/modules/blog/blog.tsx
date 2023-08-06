@@ -2,6 +2,13 @@ import { Mermaid, MermaidProps } from "mdx-mermaid/lib/Mermaid";
 import { ComponentProps } from "react";
 
 export const components = {
+    blockquote: ({ children }: { children: React.ReactNode }) => {
+        return (
+            <blockquote className="border-l-4 border-gray-300 pl-4">
+                {children}
+            </blockquote>
+        );
+    },
     img: ({ src, alt, ...props }: { alt?: string; src: string }) => {
         return (
             <>
