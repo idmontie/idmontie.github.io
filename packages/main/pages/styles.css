@@ -81,16 +81,31 @@ body {
 }
 
 .messageText {
+    fill: black !important;
+}
+
+html.dark .messageText {
     fill: white !important;
 }
 
 .flowchart-link,
 line[class^=messageLine] {
+    stroke: black !important;
+}
+
+html.dark .flowchart-link,
+html.dark line[class^=messageLine] {
     stroke: white !important;
 }
 
 #flowchart-pointEnd path,
 #arrowhead path {
+    fill: black !important;
+    stroke: black !important;
+}
+
+html.dark #flowchart-pointEnd path,
+html.dark #arrowhead path {
     fill: white !important;
     stroke: white !important;
 }

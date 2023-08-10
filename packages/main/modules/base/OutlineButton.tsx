@@ -19,7 +19,7 @@ export function OutlineButton<T>({
                 inline-block
                 rounded-sm
                 border
-                border-white
+                border-slate-800
                 bg-transparent
                 px-6
                 py-2.5
@@ -27,7 +27,7 @@ export function OutlineButton<T>({
                 font-semibold
                 uppercase
                 leading-tight
-                text-white
+                text-slate-800
                 shadow-md
                 transition
                 duration-150
@@ -43,6 +43,8 @@ export function OutlineButton<T>({
                 active:bg-gray-400
                 active:bg-opacity-25
                 active:shadow-lg
+                dark:border-white
+                dark:text-white
                 `,
                 className
             )}
