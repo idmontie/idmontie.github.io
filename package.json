@@ -41,6 +41,7 @@
         "@types/node": "18.7.18",
         "@types/react": "18.0.20",
         "@types/react-dom": "18.0.6",
+        "@types/rss": "^0.0.30",
         "@types/testing-library__jest-dom": "^5.14.5",
         "@typescript-eslint/eslint-plugin": "^5.36.1",
         "@typescript-eslint/parser": "^5.36.1",
@@ -104,6 +105,7 @@
         "regenerator-runtime": "0.13.7",
         "remark-gfm": "^3.0.1",
         "remark-mdx-remove-imports": "^1.6.22",
+        "rss": "^1.2.2",
         "tslib": "^2.3.0",
         "typescript": "^4.8.4"
     }
