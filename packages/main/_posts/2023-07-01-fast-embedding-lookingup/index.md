@@ -1,5 +1,6 @@
 ---
 title: Fast Similar Embedding Lookup
+tags: [nlp, "machine learning"]
 ---
 
 While working on the Clarity Hub NLP API, we had a common use-case where we would create embeddings from text, and use those embedding to determine cosine similarity with other embeddings. Doing this required loading all of the embeddings in-memory and then computing cosine similarity with the entire dataset. As the dataset grew, this operation would get incredibly slow.

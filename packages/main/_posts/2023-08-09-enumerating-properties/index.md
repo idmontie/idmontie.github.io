@@ -1,5 +1,6 @@
 ---
 title: "Forbidden Typescript: Enumerating Properties"
+tags: [typescript]
 ---
 
 In [“JavaScript: The Definitive Guide”](https://amzn.to/3rV5Xov), there are functions described in **6.5 Enumerating Properties** that probably shouldn’t be used in production code because they modify their input parameters: `extend`, `merge`, `restrict`, and `subtract`.

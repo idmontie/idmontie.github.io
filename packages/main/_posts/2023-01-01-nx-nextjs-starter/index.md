@@ -1,5 +1,6 @@
 ---
 title: NX NextJS Starter
+tags: [nextjs, nx, typescript]
 ---
 
 To kickstart the year, I created a repo that contains a simple starter kit for using NextJS with NX. You can see the repo here:

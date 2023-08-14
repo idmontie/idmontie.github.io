@@ -1,5 +1,6 @@
 ---
 title: Mobile
+tags: [mobile]
 ---
 
 This short post was originally on a blog I started for creating web applications. This post goes into mobile considerations for web applications.

@@ -1,5 +1,6 @@
 ---
 title: Reviewing Your Frontend Applications
+tags: [frontend, onboarding, documentation]
 ---
 
 Below are some notes I’ve taken from setting up new code repositories and onboarding new team members. Hopefully they can help improve your current documentation and notes to make onboarding a smooth process.

@@ -1,5 +1,6 @@
 ---
 title: "Forbidden Typescript: ensuring all of a type"
+tags: [typescript]
 ---
 
 When creating more complex systems, there are times where you will want to ensure that an array contains every value of a defined type. We have a union of primitive literal types to define the possible values a type can have:

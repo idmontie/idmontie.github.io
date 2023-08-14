@@ -10,12 +10,19 @@ import { OutlineButton } from "modules/base/OutlineButton";
 
 export interface BlogSlugProps {
     headTitle: string;
+    headKeywords: string;
     post: Post;
     previous: Post | null;
     next: Post | null;
 }
 
-function BlogSlug({ headTitle, post, previous, next }: BlogSlugProps) {
+function BlogSlug({
+    headTitle,
+    headKeywords,
+    post,
+    previous,
+    next,
+}: BlogSlugProps) {
     const clientSideDate = useClientSideValue(() => {
         return new Date(post.date).toLocaleDateString();
     });
@@ -25,11 +32,27 @@ function BlogSlug({ headTitle, post, previous, next }: BlogSlugProps) {
             <Head>
                 <title>{headTitle}</title>
                 <meta name="description" content={post.excerptHTML} />
+                {/* Add tags as meta keywords */}
+                <meta name="keywords" content={headKeywords} />
             </Head>
             <article className="px-6 md:px-0">
                 <header>
                     <PageHeader>{post.title}</PageHeader>
 
+                    {post.tags.length > 0 && (
+                        <div className="flex flex-wrap">
+                            {post.tags.map((tag) => {
+                                return (
+                                    <div
+                                        className="mr-2 mb-2 rounded-md bg-gray-100 px-2 py-1 text-sm capitalize dark:bg-gray-800"
+                                        key={tag}
+                                    >
+                                        {tag}
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    )}
                     <div className="mb-6 text-sm">Posted: {clientSideDate}</div>
                 </header>
                 <main>
@@ -96,6 +119,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
     return {
         props: {
             headTitle: `${postData.post.title} - idmontie's Portfolio`,
+            // Generate on the server to avoid template string interpolation
+            headKeywords: postData.post.tags.join(", "),
             post: postData.post,
             previous: postData.previous,
             next: postData.next,

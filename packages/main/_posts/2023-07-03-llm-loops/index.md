@@ -1,5 +1,6 @@
 ---
 title: AI Feedback Systems
+tags: [ai, llm]
 ---
 
 We are starting to see a rise of novel use-cases for AI in products and games using LLMs. Rather than the simple chatbot like experiences we have seen in the past using AI, we are starting to see feedback systems being added to these experiences, providing additional context to the LLM than just the past conversation.
@@ -8,7 +9,7 @@ A typical game loop for this type of system would look like:
 
 ```mermaid
 graph LR
-  Rules --> LLM  
+  Rules --> LLM
   InputStates["Input States"] --> LLM
   LLM --> OutputState
   OutputState["Output State"] --> GameEngine

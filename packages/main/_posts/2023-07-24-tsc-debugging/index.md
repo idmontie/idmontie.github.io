@@ -1,5 +1,6 @@
 ---
 title: Debugging slow tsc
+tags: [typescript]
 ---
 
 I was working on a project and I noticed the `tsc` check that we ran on pre-commit hooks had become dramatically slower. I was seeing near instant times to type check the entire project go to agonizingly slow minutes to check the project. I was able to narrow the range of commits to some change we made within a month window. I’m sure I could have narrowed it down by continuing to git bisect and re-running `time npx tsc`, but it was much easier to just check out main and try out the following:

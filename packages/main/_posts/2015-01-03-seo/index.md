@@ -1,5 +1,6 @@
 ---
 title: SEO
+tags: [seo]
 ---
 
 This post was originally on a blog I started for creating web applications. This post goes into SEO considerations for web applications.

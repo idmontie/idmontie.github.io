@@ -1,5 +1,6 @@
 ---
 title: "Forbidden Typescript: Using Object.create to clone"
+tags: [typescript]
 ---
 
 In “Javascript: The Definitive Guide” there is an example that uses `Object.inherit` to inherit the prototype change. JavaScript defines a method `Object.create` that creates a new object using the given argument as the prototype of that object. Translating the examples from The Definitive Guide to Typescript, it looks like:
@@ -53,7 +54,7 @@ function inheritAndFreeze<T extends object>(obj: T, values: Partial<T>): Readonl
         properties[key] = {
             value: values[key] ?? undefined,
             writable: false,
-						configurable: false,
+            configurable: false,
         };
     })
 
@@ -84,6 +85,5 @@ If we didn’t mark the return value as `Readonly<Partial<T>>`, and instead just
 Let’s step back and really look at what `inherit` was doing. All it gave us was a template object, and if you read on [MDN about Inheritance and prototype chaining](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain):
 
 > You may also see some legacy code using `[Object.create()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create)` to build the inheritance chain. However, because this reassigns the `prototype` property and removes the `[constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor)` property, it can be more error-prone, while performance gains may not be apparent if the constructors haven't created any instances yet.
-> 
 
 The key here is to be wary of using utility functions built into the language that return the `any` type. Be careful what the Typescript constraints are and make sure you don’t have any type-holes when you are using these generic functions.

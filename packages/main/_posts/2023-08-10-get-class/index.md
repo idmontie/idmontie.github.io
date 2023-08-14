@@ -1,5 +1,6 @@
 ---
 title: "Forbidden Typescript: Get Class Name"
+tags: [typescript]
 ---
 
 We don’t get a lot of information using `typeof` in JavaScript or TypeScript. At most, it tells us whether a value is `undefined`, `number`, `string`, or `object`. If you want to get the class name using a function, you can use the following extended version of `classOf` that is originally from “JavaScript: The Definitive Guide”:

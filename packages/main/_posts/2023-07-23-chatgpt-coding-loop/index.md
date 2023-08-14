@@ -1,5 +1,6 @@
 ---
 title: ChatGPT, Coding, and Language
+tags: ["chatgpt"]
 ---
 
 I’ve been experimenting with ChatGPT, just like everyone else. But why has it become so popular? It truly is a revolutionary piece of technology. Is it The Next Big Thing? Will it really replace all of us?

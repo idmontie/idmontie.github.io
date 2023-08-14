@@ -1,5 +1,6 @@
 ---
 title: Data on the Wire
+tags: [architecture]
 ---
 
 Back when [Meteor](https://www.meteor.com/) was in vogue, they popularized the concept of “Data on the wire”. This was the idea that the UI would be updated with changes from the dataset it is subscribed to.

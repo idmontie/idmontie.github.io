@@ -1,5 +1,6 @@
 ---
 title: Component Library Checklist
+tags: ["component library", "checklist"]
 ---
 
 The following is a checklist I like to use to ensure I'm covering all the bases when building a component library. It's a work in progress, but I hope it can be useful to others.

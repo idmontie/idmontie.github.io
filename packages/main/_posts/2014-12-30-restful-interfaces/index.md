@@ -1,6 +1,6 @@
 ---
 title: RESTful Interfaces
-tags: [rest, web, issues]
+tags: [rest, web]
 ---
 
 This post was originally on a blog I started for creating web applications. This post goes into RESTful interfaces and how to design them.

@@ -1,5 +1,6 @@
 ---
 title: Smart Contract Security
+tags: [ethereum, smart-contracts, security]
 ---
 
 The crypto craze has died down, but if you are working on Smart Contracts or thinking about creating a new blockchain projects, security is a huge part of making sure the project is successful. Since Smart Contracts often interact with cryptocurrencies, blockchain assets, or other tokens, it’s important to make sure the Smart Contract is secure and follows best practices.

@@ -1,5 +1,6 @@
 ---
 title: Web Standards
+tags: ["web standards"]
 ---
 
 This post was originally on a blog I started for creating web applications. This post goes into using web standards and best practices.

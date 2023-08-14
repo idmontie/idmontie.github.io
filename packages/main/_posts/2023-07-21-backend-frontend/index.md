@@ -1,5 +1,6 @@
 ---
 title: Backend for Frontend
+tags: [backend, frontend, architecture]
 ---
 
 The Backend for the Frontend (BEFFE) is typically stateless and acts as a proxy for other services, including authentication, authorization, and core services. The recent divorce of browser code being rendered by backend services was created by SPAs - Single Page Applications. In simpler architectures, a SPA and service could be as simple as:

@@ -1,5 +1,6 @@
 ---
 title: The Hierarchy of Webapp Needs
+tags: ["webapp", "checklist"]
 ---
 
 I was thinking about all the little projects I work on and how they grow over time. The applications end up hitting some milestones and end up needing similar functionality that compliments the core features. A small project ends up getting complex enough that it requires some unit tests. I’ll go to deploy the project and now I need some deployment scripts and analytics to ensure the application is running correctly. The technology may change between each project, but web applications always seem to have the same steps that need to be taken to strengthen the application as it is scaled up.

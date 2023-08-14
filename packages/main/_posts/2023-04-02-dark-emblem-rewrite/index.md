@@ -1,5 +1,6 @@
 ---
 title: Dark Emblem Rewrite
+tags: ["dark emblem", "wax", "nft", "blockchain"]
 ---
 
 Dark Emblem is an NFT project that was sparked by the idea of combining cards games with Crypto Kitties. You can buy packs, open them to collect random cards, and then use those cards to battle raids with others.

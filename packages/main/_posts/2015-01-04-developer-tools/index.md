@@ -1,5 +1,6 @@
 ---
 title: Developer Tools
+tags: [developer tools]
 ---
 
 This post was originally on a blog I started for creating web applications. This post goes into using developer tools to help you develop your web applications.

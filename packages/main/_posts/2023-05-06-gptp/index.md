@@ -1,5 +1,6 @@
 ---
 title: Revisiting GPTP - the Starcraft modding toolkit
+tags: [starcraft, gptp, cplusplus]
 ---
 
 One of the first PC games I played was Starcraft and the expansion Starcraft: Broodwar. We didn’t have a PC, so I had to play it on a friend’s computer, but I remember being immersed in the real-time strategy gameplay.

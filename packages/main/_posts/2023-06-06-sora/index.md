@@ -1,5 +1,6 @@
 ---
 title: Sora - OpenAI Visual Studio Code Extension
+tags: ["openai", "vscode"]
 ---
 Github Copilot and other AI tools are hitting the scene. I decided to create my own Visual Studio Code extension, which is designed to use OpenAI’s APIs to bring some additional ChatGPT functionality into the code editor. The goal with Sora was to enable a developer to thoughtfully write a comment about the code they would like the AI to write, and then commit to it – rather than the real-time typeahead that Github Copilot provides.
 
