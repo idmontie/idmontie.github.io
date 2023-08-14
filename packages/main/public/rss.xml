@@ -9,9 +9,9 @@
             <link>https://idmontie.github.io</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 14 Aug 2023 16:48:16 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 14 Aug 2023 16:59:22 GMT</lastBuildDate>
         <atom:link href="https://idmontie.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 14 Aug 2023 16:48:16 GMT</pubDate>
+        <pubDate>Mon, 14 Aug 2023 16:59:22 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2023, idmontie]]></copyright>
         <item>
             <title><![CDATA[Forbidden Typescript: full/partial objects]]></title>

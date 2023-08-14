@@ -11,6 +11,8 @@ export function Nav() {
                 return "Home";
             case "/blog":
                 return "Blog";
+            case "/blog/tag":
+                return "Tags";
             case "/portfolio":
                 return "Portfolio";
         }
@@ -34,6 +36,14 @@ export function Nav() {
                     })}
                 >
                     Blog
+                </Link>
+                <Link
+                    href="/blog/tag"
+                    className={classNames({
+                        "font-bold": activeLink === "Tags",
+                    })}
+                >
+                    Tags
                 </Link>
                 <Link
                     href="/portfolio"

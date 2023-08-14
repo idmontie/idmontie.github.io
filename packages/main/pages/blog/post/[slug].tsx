@@ -43,12 +43,13 @@ function BlogSlug({
                         <div className="flex flex-wrap">
                             {post.tags.map((tag) => {
                                 return (
-                                    <div
+                                    <Link
                                         className="mr-2 mb-2 rounded-md bg-gray-100 px-2 py-1 text-sm capitalize dark:bg-gray-800"
                                         key={tag}
+                                        href={`/blog/tag/${tag}`}
                                     >
                                         {tag}
-                                    </div>
+                                    </Link>
                                 );
                             })}
                         </div>
