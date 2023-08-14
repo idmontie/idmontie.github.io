@@ -9,10 +9,17 @@
             <link>https://idmontie.github.io</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 13 Aug 2023 22:51:25 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 14 Aug 2023 17:19:27 GMT</lastBuildDate>
         <atom:link href="https://idmontie.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 13 Aug 2023 22:51:25 GMT</pubDate>
+        <pubDate>Mon, 14 Aug 2023 17:19:27 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2023, idmontie]]></copyright>
+        <item>
+            <title><![CDATA[Forbidden Typescript: full/partial objects]]></title>
+            <description><![CDATA[<p>When trying to be as type-safe as possible in Typescript, there are times when you may have to dynamically construct an object. You know as a programmer that all the keys will have values, but because you have to dynamically construct the values, the type system doesn’t know that the object is complete:</p>]]></description>
+            <link>https://idmontie.github.io/blog/post/2023-08-14-partial-objects</link>
+            <guid isPermaLink="false">2023-08-14-partial-objects</guid>
+            <pubDate>Mon, 14 Aug 2023 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Reviewing Your Frontend Applications]]></title>
             <description><![CDATA[<p>Below are some notes I’ve taken from setting up new code repositories and onboarding new team members. Hopefully they can help improve your current documentation and notes to make onboarding a smooth process.</p>]]></description>
