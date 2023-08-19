@@ -1,5 +1,6 @@
 ---
-title: Feature Context
+title: Feature Contexts
+tags: ["typescript", "react"]
 ---
 
 A common pattern in larger application when trying to track feature usage is to try to namespace events. For example, you might have a button that you want to track clicks on. For the sake of this article, we will use the `data-track` attribute on elements to track their usage, but you can imagine this works with any tracking implementation where you may need to explicitly call a tracking function (e.g. `track(namespace)`).
