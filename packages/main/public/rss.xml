@@ -9,10 +9,17 @@
             <link>https://idmontie.github.io</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 13 Sep 2023 04:58:03 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 27 Sep 2023 03:32:33 GMT</lastBuildDate>
         <atom:link href="https://idmontie.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 13 Sep 2023 04:58:03 GMT</pubDate>
+        <pubDate>Wed, 27 Sep 2023 03:32:33 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2023, idmontie]]></copyright>
+        <item>
+            <title><![CDATA[In Good Company, Impostor Syndrome]]></title>
+            <description><![CDATA[<p>We’ve all felt it at some point in our careers: that dreaded feeling of impostor syndrome kicking in as we find ourselves in over our heads. Questions like, “Am I truly qualified for this?” and “Are my peers facing the same challenges?” often plague our minds.</p>]]></description>
+            <link>https://idmontie.github.io/blog/post/2023-09-24-impostor-syndrome</link>
+            <guid isPermaLink="false">2023-09-24-impostor-syndrome</guid>
+            <pubDate>Sun, 24 Sep 2023 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Enforcing Localization through Types]]></title>
             <description><![CDATA[<p>When building web applications, enforcing that strings be localized to the user’s preferred language can sometimes be achieved via lint rules. But what if we could enforce proper localization using types in Typescript?</p>]]></description>
