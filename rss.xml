@@ -9,10 +9,17 @@
             <link>https://idmontie.github.io</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 19 Nov 2023 21:00:43 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 12 Dec 2023 03:19:27 GMT</lastBuildDate>
         <atom:link href="https://idmontie.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 19 Nov 2023 21:00:43 GMT</pubDate>
+        <pubDate>Tue, 12 Dec 2023 03:19:27 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2023, idmontie]]></copyright>
+        <item>
+            <title><![CDATA[The Breaking Point - Understanding the performance of your systems]]></title>
+            <description><![CDATA[<p>Every system has its limits. When designing and architecting systems, sometimes we as engineers like to assume things can scale infinitely. Maybe we can use larger machines, or maybe we can deploy more instances of a service. But even trying to scale systems isn’t magically infinite. It’s a smart move to understand the limitations of what we are building upfront so we can make better technology choices, and squeeze the performance out of our existing systems.</p>]]></description>
+            <link>https://idmontie.github.io/blog/post/2023-12-08-the-breaking-point</link>
+            <guid isPermaLink="false">2023-12-08-the-breaking-point</guid>
+            <pubDate>Fri, 08 Dec 2023 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Looking back on Clarity Hub]]></title>
             <description><![CDATA[<p>In my projects list on this blog is a set of projects related to Clarity Hub. This was a startup I did with a group of friends where we aimed to create software to enable software product teams to gather customer feedback, and then action on it.</p>]]></description>
