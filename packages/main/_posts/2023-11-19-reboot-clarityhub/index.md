@@ -1,5 +1,6 @@
 ---
 title: "Looking back on Clarity Hub"
+tags: ["clarityhub", "startups"]
 ---
 
 In my projects list on this blog is a set of projects related to Clarity Hub. This was a startup I did with a group of friends where we aimed to create software to enable software product teams to gather customer feedback, and then action on it.

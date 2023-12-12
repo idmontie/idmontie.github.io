@@ -1,5 +1,6 @@
 ---
 title: "In Good Company, Impostor Syndrome"
+tags: ["career"]
 ---
 
 We’ve all felt it at some point in our careers: that dreaded feeling of impostor syndrome kicking in as we find ourselves in over our heads. Questions like, “Am I truly qualified for this?” and “Are my peers facing the same challenges?” often plague our minds.

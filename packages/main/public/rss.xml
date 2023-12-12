@@ -9,10 +9,17 @@
             <link>https://idmontie.github.io</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 27 Sep 2023 03:32:33 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 19 Nov 2023 20:58:25 GMT</lastBuildDate>
         <atom:link href="https://idmontie.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 27 Sep 2023 03:32:33 GMT</pubDate>
+        <pubDate>Sun, 19 Nov 2023 20:58:25 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2023, idmontie]]></copyright>
+        <item>
+            <title><![CDATA[Looking back on Clarity Hub]]></title>
+            <description><![CDATA[<p>In my projects list on this blog is a set of projects related to Clarity Hub. This was a startup I did with a group of friends where we aimed to create software to enable software product teams to gather customer feedback, and then action on it.</p>]]></description>
+            <link>https://idmontie.github.io/blog/post/2023-11-19-reboot-clarityhub</link>
+            <guid isPermaLink="false">2023-11-19-reboot-clarityhub</guid>
+            <pubDate>Sun, 19 Nov 2023 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[In Good Company, Impostor Syndrome]]></title>
             <description><![CDATA[<p>We’ve all felt it at some point in our careers: that dreaded feeling of impostor syndrome kicking in as we find ourselves in over our heads. Questions like, “Am I truly qualified for this?” and “Are my peers facing the same challenges?” often plague our minds.</p>]]></description>
