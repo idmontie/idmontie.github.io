@@ -7,7 +7,7 @@ export interface CardProps {
 
 export function Card({ children }: CardProps) {
     return (
-        <div className="overflow-visible rounded-lg bg-white shadow-lg dark:bg-gray-800">
+        <div className="flex-1 overflow-visible rounded-lg bg-white shadow-lg dark:bg-gray-800">
             {children}
         </div>
     );

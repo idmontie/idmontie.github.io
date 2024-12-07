@@ -28,7 +28,7 @@ body {
 }
 
 .prose {
-    line-height: 1.9;
+    line-height: 1.75;
 }
 
 .prose a {
@@ -37,8 +37,13 @@ body {
 }
 
 .prose p,
-.prose ul {
+.prose ul, ol {
     font-family: "Merriweather", serif;
+}
+
+
+.prose ol, ul {
+    margin-left: 2rem;
 }
 
 .prose h2,

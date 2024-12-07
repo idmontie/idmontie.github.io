@@ -14,8 +14,20 @@ export interface BlogTagsProps {
     headTitle: string;
     tags: TagInfo[];
 }
+function getSizeOfTag(
+    tag: TagInfo,
+    averageNumberOfPostsPerTag: number
+): string {
+    if (tag.numberOfPosts > 2 * averageNumberOfPostsPerTag)
+        return "text-3xl md:col-span-2 col-span-1";
+    if (tag.numberOfPosts > averageNumberOfPostsPerTag)
+        return "text-2xl col-span-1";
+    return "text-xl";
+}
 
 function BlogTags({ headTitle, tags }: BlogTagsProps) {
+    const sum = tags.reduce((acc, tag) => acc + tag.numberOfPosts, 0);
+    const averageNumberOfPostsPerTag = sum / tags.length;
     return (
         <div>
             <Head>
@@ -26,18 +38,27 @@ function BlogTags({ headTitle, tags }: BlogTagsProps) {
                     <PageHeader>Tags</PageHeader>
                 </header>
 
-                <div className="space-y-6">
+                <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                     {tags.map((data) => {
                         return (
-                            <div key={data.tag}>
-                                <Link href={`/blog/tag/${data.tag}`}>
+                            <div
+                                key={data.tag}
+                                className={getSizeOfTag(
+                                    data,
+                                    averageNumberOfPostsPerTag
+                                )}
+                            >
+                                <Link
+                                    href={`/blog/tag/${data.tag}`}
+                                    className="flex"
+                                >
                                     <Card>
                                         <div className="p-4">
                                             <div className="flex flex-row gap-4">
                                                 <div className="flex-1">
-                                                    <h2 className="text-base font-bold">
+                                                    <span className="font-bold">
                                                         {data.tag}
-                                                    </h2>
+                                                    </span>
                                                 </div>
 
                                                 <div>

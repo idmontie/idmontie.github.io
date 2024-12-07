@@ -15,7 +15,7 @@ export function PostPreviewItem({ post }: PostPreviewItemProps) {
 
     return (
         <Card>
-            <div className="p-4">
+            <div className="p-8 md:px-16">
                 <Link href={`/blog/post/${post.slug}`}>
                     <h2 className="text-2xl font-bold">{post.title}</h2>
                 </Link>
