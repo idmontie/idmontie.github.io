@@ -33,6 +33,27 @@ jest.mock("remark-gfm", () => ({
     },
 }));
 
+// Mock mdx-mermaid
+jest.mock("mdx-mermaid", () => ({
+    default: function () {
+        return;
+    },
+}));
+
+// Mock rehype-katex
+jest.mock("rehype-katex", () => ({
+    default: function () {
+        return;
+    },
+}));
+
+// Mock remark-math
+jest.mock("remark-math", () => ({
+    default: function () {
+        return;
+    },
+}));
+
 describe("Index", () => {
     it("should render successfully", () => {
         const { baseElement } = render(

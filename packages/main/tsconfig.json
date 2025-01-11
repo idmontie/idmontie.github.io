@@ -14,7 +14,7 @@
         "incremental": true,
         "strictNullChecks": true,
         "types": ["jest", "node"],
-        "lib": ["dom", "dom.iterable", "esnext"],
+        "lib": ["dom", "dom.iterable", "esnext", "ES2021"],
         "moduleResolution": "node"
     },
     "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", "next-env.d.ts"],

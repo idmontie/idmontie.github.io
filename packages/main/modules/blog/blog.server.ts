@@ -1,18 +1,20 @@
 import { join } from "path";
 import { BlogOptions, createBlog } from "nextjs-blog-lib";
-import { compile, run } from "@mdx-js/mdx";
+import { compile, run, RunOptions } from "@mdx-js/mdx";
 import * as runtime from "react/jsx-runtime";
 import { components } from "./blog";
 import mdxMermaid from "mdx-mermaid";
 import removeImports from "remark-mdx-remove-imports";
 import remarkGfm from "remark-gfm";
+import rehypeKatex from "rehype-katex";
+import remarkMath from "remark-math";
 
 export const compiler = async (mdx: string) => {
     const inter = String(
         await compile(mdx, {
             outputFormat: "function-body",
-            useDynamicImport: true,
-            remarkPlugins: [remarkGfm, mdxMermaid, removeImports],
+            rehypePlugins: [rehypeKatex],
+            remarkPlugins: [remarkGfm, mdxMermaid, removeImports, remarkMath],
         })
     );
 
@@ -27,12 +29,11 @@ export const compiler = async (mdx: string) => {
 };
 
 export const runner = async (code: string) => {
-    const scope = {};
+    // const scope = {};
 
     const { default: Component } = await run(code, {
         ...runtime,
-        scope,
-    });
+    } as RunOptions);
 
     // eslint-disable-next-line @typescript-eslint/no-unsafe-return
     return Component;

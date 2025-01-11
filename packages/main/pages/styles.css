@@ -81,6 +81,10 @@ body {
     margin-top: 1rem;
 }
 
+.prose .katex-display * + * {
+    margin-top: 0;
+}
+
 .prose li + li {
     margin-top: 0.25rem;
 }

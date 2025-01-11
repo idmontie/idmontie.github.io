@@ -1,4 +1,4 @@
-import { run } from "@mdx-js/mdx";
+import { run, RunOptions } from "@mdx-js/mdx";
 import { useEffect, useState } from "react";
 import * as runtime from "react/jsx-runtime";
 import { components } from "../blog";
@@ -19,8 +19,7 @@ export function RenderMarkdown({ html, code }: RenderMarkdownProps) {
         void (async () => {
             const { default: Jsx } = await run(code, {
                 ...runtime,
-                scope: {},
-            });
+            } as RunOptions);
             setMdxComponent(() => Jsx as MdxRenderType);
         })();
     }, [code]);
