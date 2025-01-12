@@ -9,10 +9,17 @@
             <link>https://idmontie.github.io</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 11 Jan 2025 17:58:23 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 12 Jan 2025 00:36:10 GMT</lastBuildDate>
         <atom:link href="https://idmontie.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 11 Jan 2025 17:58:23 GMT</pubDate>
+        <pubDate>Sun, 12 Jan 2025 00:36:10 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2025, idmontie]]></copyright>
+        <item>
+            <title><![CDATA[APIs, Complexity, and Surfaces]]></title>
+            <description><![CDATA[<p>Maintaining growing software is challenging. Poorly architected APIs and</p>]]></description>
+            <link>https://idmontie.github.io/blog/post/2025-01-12-api-surfaces</link>
+            <guid isPermaLink="false">2025-01-12-api-surfaces</guid>
+            <pubDate>Sun, 12 Jan 2025 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[The Breaking Point - Understanding the performance of your systems]]></title>
             <description><![CDATA[<p>Every system has its limits. When designing and architecting systems, sometimes we as engineers like to assume things can scale infinitely. Maybe we can use larger machines, or maybe we can deploy more instances of a service. But even trying to scale systems isn’t magically infinite. It’s a smart move to understand the limitations of what we are building upfront so we can make better technology choices, and squeeze the performance out of our existing systems.</p>]]></description>
