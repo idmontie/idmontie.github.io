@@ -81,8 +81,8 @@ export const getStaticProps: GetStaticProps = async () => {
 
     return {
         props: {
-            posts: blogPosts.slice(0, 2),
-            projects: projectPosts.slice(0, 2),
+            posts: blogPosts.slice(0, 3),
+            projects: projectPosts.slice(0, 4),
         },
     };
 };
