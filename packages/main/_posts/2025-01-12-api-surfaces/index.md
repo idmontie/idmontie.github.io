@@ -11,6 +11,8 @@ maintainability, and ease of use, then it becomes a question of how
 do we best measure this complexity so that we can make informed decisions
 about how to refactor and improve our APIs.
 
+<!--truncate-->
+
 We will consider an API as an abstract set of functions, each with a
 defined set of input parameters and outputs. An API can represent a library,
 an interface, or a set of functions in a design system.
