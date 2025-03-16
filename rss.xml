@@ -9,13 +9,28 @@
             <link>https://idmontie.github.io</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 12 Jan 2025 00:36:10 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 16 Mar 2025 23:57:36 GMT</lastBuildDate>
         <atom:link href="https://idmontie.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 12 Jan 2025 00:36:10 GMT</pubDate>
+        <pubDate>Sun, 16 Mar 2025 23:57:36 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2025, idmontie]]></copyright>
         <item>
+            <title><![CDATA[On the Addition of Fractions, by Petri Mengoli]]></title>
+            <description><![CDATA[<p>I was researching the origin of the Basel problem to write a short blog post about
+how Euler approached the problem (only to get beaten by <a href="https://www.youtube.com/watch?v=jmtiWGnj5os">anime characters talking
+about it</a>).</p>]]></description>
+            <link>https://idmontie.github.io/blog/post/2025-03-16-on-the-addition-of-fractions</link>
+            <guid isPermaLink="false">2025-03-16-on-the-addition-of-fractions</guid>
+            <pubDate>Sun, 16 Mar 2025 00:00:00 GMT</pubDate>
+        </item>
+        <item>
             <title><![CDATA[APIs, Complexity, and Surfaces]]></title>
-            <description><![CDATA[<p>Maintaining growing software is challenging. Poorly architected APIs and</p>]]></description>
+            <description><![CDATA[<p>Maintaining growing software is challenging. Poorly architected APIs and
+incorrect abstractions can significantly impact the ability for engineering
+teams to deliver new features in a timely manner. If we consider an
+API&#x27;s complixty as being a significant contributor to its overhead,
+maintainability, and ease of use, then it becomes a question of how
+do we best measure this complexity so that we can make informed decisions
+about how to refactor and improve our APIs.</p>]]></description>
             <link>https://idmontie.github.io/blog/post/2025-01-12-api-surfaces</link>
             <guid isPermaLink="false">2025-01-12-api-surfaces</guid>
             <pubDate>Sun, 12 Jan 2025 00:00:00 GMT</pubDate>
