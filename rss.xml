@@ -9,10 +9,17 @@
             <link>https://idmontie.github.io</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 16 Mar 2025 23:57:36 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 21 Apr 2025 16:50:10 GMT</lastBuildDate>
         <atom:link href="https://idmontie.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 16 Mar 2025 23:57:36 GMT</pubDate>
+        <pubDate>Mon, 21 Apr 2025 16:50:10 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2025, idmontie]]></copyright>
+        <item>
+            <title><![CDATA[Agents, Agents, Agents]]></title>
+            <description><![CDATA[<p>In 2008, Steve Ballmer once famously said “<a href="https://www.youtube.com/watch?v=Vhh_GeBPOhs">Developers, developers, developers</a>” in a highly meme-able video. He was trying to emphasize the importance of software developers in business and that their importance was only going to continue to grow. Microsoft shifted to try to support software developers, noticing that if they supported developers, they would build better software for Windows, which in turn would make people want to use Windows.</p>]]></description>
+            <link>https://idmontie.github.io/blog/post/2025-04-21-agents-agents-agents</link>
+            <guid isPermaLink="false">2025-04-21-agents-agents-agents</guid>
+            <pubDate>Mon, 21 Apr 2025 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[On the Addition of Fractions, by Petri Mengoli]]></title>
             <description><![CDATA[<p>I was researching the origin of the Basel problem to write a short blog post about
