@@ -20,7 +20,7 @@ an interface, or a set of functions in a design system.
 ## An API as a Surface
 
 A good API minimizes the complexity that a consumer needs to understand
-in order to use it. If we think o fan  API as an abstract two dimensional
+in order to use it. If we think of an  API as an abstract two dimensional
 surface, then the complexity of the internals of the API - all the code
 that is required to implement the API - is the area of that surface.
 The API that is exposed as functions, input parameters, and outputs is
@@ -79,7 +79,7 @@ $$
 where $p$ is the set of input parameters, $r$ is the set of return values,
 and $|p|$ is size of the set of input parameters and $|r|$ is the size of
 the set of return values. By "size" we  mean the number of "meaningful"
-values that a parameter type has. For example, a boolean has two meaningful,
+values that a parameter type has. For example, a boolean has two meaningful values,
 but an integer may have an infinite range of non-meaningful values. In some
 languages, like C, it is common for an integer to have meaningful values
 of -1 and 0, and non-meaningful values of all other integers. In the case where
@@ -93,7 +93,7 @@ values.
 
 ## Tests as Consumers
 
-Interestingly, the test for an API already act as a consumer and can demonstrate
+Interestingly, the tests for an API already act as a consumer and can demonstrate
 the complexity of an API as it stives to cover all possible branches and use-cases.
 For our function with 3 boolean inputs, we would need to write 8 tests to cover
 all possible input combinations. A suite of tests that check tons of combinations
