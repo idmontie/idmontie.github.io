@@ -22,7 +22,6 @@ jobs:
           file_name: .env.local
           fail_on_empty: false
       - run: npm run build
-      - run: npm run export
       - uses: actions/upload-artifact@v4
         with:
           name: ui-dist
@@ -44,7 +43,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/packages/main/exported
+          publish_dir: ./dist/packages/main/.next
   healthcheck:
     needs: [site]
     runs-on: ubuntu-latest
