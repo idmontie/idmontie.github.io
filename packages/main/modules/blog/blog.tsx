@@ -57,11 +57,11 @@ export const components = {
         return (
             <CardLink href={props.href}>
                 <div className="p-6">
-                    <h4 className="!m-0 !p-0 text-lg font-bold">
+                    <h4 className="!m-0 !p-0 !text-base font-bold !no-underline">
                         {props.title}
                     </h4>
                     {props.description && (
-                        <p className="text-sm text-gray-500">
+                        <p className="text-sm text-gray-500 !no-underline">
                             {props.description}
                         </p>
                     )}
