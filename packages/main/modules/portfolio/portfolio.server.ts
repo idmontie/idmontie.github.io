@@ -4,7 +4,7 @@ import { components } from "../blog/blog";
 import { compiler, runner } from "modules/blog/blog.server";
 
 const projectOptions: Partial<BlogOptions> = {
-    postsDirectory: join(process.cwd(), "packages", "main", "_projects"),
+    postsDirectory: join(process.cwd(), "_projects"),
     rewriteMediaUrls: {
         mediaDirectory: join(
             process.cwd(),

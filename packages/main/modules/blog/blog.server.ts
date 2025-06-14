@@ -40,15 +40,9 @@ export const runner = async (code: string) => {
 };
 
 const blogOptions: Partial<BlogOptions> = {
-    postsDirectory: join(process.cwd(), "packages", "main", "_posts"),
+    postsDirectory: join(process.cwd(), "_posts"),
     rewriteMediaUrls: {
-        mediaDirectory: join(
-            process.cwd(),
-            "packages",
-            "main",
-            "public",
-            "media"
-        ),
+        mediaDirectory: join(process.cwd(), "public", "media"),
         relativeDirectory: "/media",
     },
     mdx: {

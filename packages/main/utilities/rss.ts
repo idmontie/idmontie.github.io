@@ -29,7 +29,7 @@ export function generateRssFeed(posts: Post[]) {
     }
 
     // Path to public folder
-    const publicDir = path.join(process.cwd(), "packages", "main", "public");
+    const publicDir = path.join(process.cwd(), "public");
 
     fs.writeFileSync(
         path.join(publicDir, "rss.xml"),
