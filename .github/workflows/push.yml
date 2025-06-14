@@ -46,5 +46,4 @@ jobs:
           working-directory: packages/main-e2e
           # Use nx to run the e2e tests
           command: npm run e2e
-          
-  
+

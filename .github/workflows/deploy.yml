@@ -26,6 +26,8 @@ jobs:
         with:
           name: ui-dist
           path: dist
+          include-hidden-files: true
+
   site:
     needs: [build]
     runs-on: ubuntu-latest
