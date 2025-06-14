@@ -32,7 +32,7 @@ function BlogIndex({ hasPreviousPage, posts }: BlogIndexProps) {
                     })}
                 </div>
 
-                <div>
+                <div className="py-4">
                     <div />
                     <div>
                         {hasPreviousPage && (

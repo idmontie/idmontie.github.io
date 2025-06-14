@@ -36,7 +36,7 @@ function BlogPage({ hasPreviousPage, hasNextPage, posts }: BlogIndexProps) {
                     })}
                 </div>
 
-                <div>
+                <div className="py-4">
                     <div>
                         {hasNextPage && (
                             <Link
