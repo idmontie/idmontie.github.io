@@ -1,4 +1,5 @@
 import { Mermaid, MermaidProps } from "mdx-mermaid/lib/Mermaid";
+import { CardLink } from "modules/base/Card";
 import { ComponentProps } from "react";
 
 export const components = {
@@ -41,6 +42,31 @@ export const components = {
             <div className="py-8 [&_svg]:m-auto">
                 <Mermaid {...props} />
             </div>
+        );
+    },
+    DownloadCard: (
+        props: ComponentProps<"div"> & {
+            href: string;
+            title: string;
+            description?: string;
+        }
+    ) => {
+        /**
+         * Create a nice clickable card to download a file.
+         */
+        return (
+            <CardLink href={props.href}>
+                <div className="p-6">
+                    <h4 className="!m-0 !p-0 text-lg font-bold">
+                        {props.title}
+                    </h4>
+                    {props.description && (
+                        <p className="text-sm text-gray-500">
+                            {props.description}
+                        </p>
+                    )}
+                </div>
+            </CardLink>
         );
     },
 };

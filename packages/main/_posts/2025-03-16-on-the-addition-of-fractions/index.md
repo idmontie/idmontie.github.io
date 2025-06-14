@@ -71,4 +71,9 @@ more advanced mathematics and insight in order to come up with this equality, an
 he revisited the sum in multiple letters with slightly different arguments to
 validate his work.
 
-For a full write up on this, see my self-published work here: [PDF Download](/docs/on-the-addition-of-fractions.pdf).
+For a full write up on this, see my self-published work here:
+
+<DownloadCard
+    href="/docs/on-the-addition-of-fractions.pdf"
+    title="On the addition of fractions.pdf"
+/>
