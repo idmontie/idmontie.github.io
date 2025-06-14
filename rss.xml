@@ -9,10 +9,18 @@
             <link>https://idmontie.github.io</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 14 Jun 2025 22:27:54 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 14 Jun 2025 23:37:26 GMT</lastBuildDate>
         <atom:link href="https://idmontie.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 14 Jun 2025 22:27:54 GMT</pubDate>
+        <pubDate>Sat, 14 Jun 2025 23:37:26 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2025, idmontie]]></copyright>
+        <item>
+            <title><![CDATA[Petri Mengoli Faction Inequality]]></title>
+            <description><![CDATA[<p>In my previous post, <a href="/blog/post/2025-03-16-on-the-addition-of-fractions">&quot;On the Addition of Fractions, by Petri Mengoli&quot;</a>, I
+wrote that the following inequality holds, with no proof</p>]]></description>
+            <link>https://idmontie.github.io/blog/post/2025-06-15-mengoli-fractions</link>
+            <guid isPermaLink="false">2025-06-15-mengoli-fractions</guid>
+            <pubDate>Sun, 15 Jun 2025 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Agents, Agents, Agents]]></title>
             <description><![CDATA[<p>In 2008, Steve Ballmer once famously said “<a href="https://www.youtube.com/watch?v=Vhh_GeBPOhs">Developers, developers, developers</a>” in a highly meme-able video. He was trying to emphasize the importance of software developers in business and that their importance was only going to continue to grow. Microsoft shifted to try to support software developers, noticing that if they supported developers, they would build better software for Windows, which in turn would make people want to use Windows.</p>]]></description>
