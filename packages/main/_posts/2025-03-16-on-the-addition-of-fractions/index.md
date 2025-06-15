@@ -9,9 +9,9 @@ about it](https://www.youtube.com/watch?v=jmtiWGnj5os)).<!--truncate--> I howeve
 dive deeper into the context of why Euler wanted to even approach this problem,
 so I investigated the work of Petri Mengoli.
 
-The publication of his work “On the Addition of Fractions” is available via the
+The publication of his work "On the Addition of Fractions" is available via the
 [Internet Archive in its original Latin](https://archive.org/details/bub_gb_PrKgVx1LcUUC/mode/1up).
-Petri Mengoli’s work focuses on the harmonic series in the preface and shows
+Petri Mengoli's work focuses on the harmonic series in the preface and shows
 that it diverges. The harmonic series is written in modern notation as:
 
 $$
@@ -19,8 +19,8 @@ $$
 $$
 
 His proof relies on finding groupings of fractions that sum greater to one
-(which his paper refers to as “unity”). First, look at the first 3 terms after
-“unity”: $1/2 + 1/3 + 1/4$. When added, we see that when we set common denominators:
+(which his paper refers to as "unity"). First, look at the first 3 terms after
+"unity": $1/2 + 1/3 + 1/4$. When added, we see that when we set common denominators:
 
 $$
 6/12 + 4/12 + 3/12 = 13 / 12 > 1
@@ -38,8 +38,8 @@ to one. He demonstrates that for any given number, there is a finite set of
 fractions that can be added to get a value greater than that. Therefore the
 series must diverge.
 
-His approach here is inspired by Archimedes’ "Quadrature of the Parabola",
-and focuses on using the “method of exhaustion”, rather than manipulating
+His approach here is inspired by Archimedes' "Quadrature of the Parabola",
+and focuses on using the "method of exhaustion", rather than manipulating
 infinite series or dealing with limits.
 
 From this work, comes the original quote of what became known as the Basel
@@ -65,7 +65,7 @@ greater ingenuity so that the precise sum of the arrangement
 I proposed to myself may be recovered.
 >
 
-This is the work that perhaps sparked the inspiration for Eulers proof that the
+This is the work that perhaps sparked the inspiration for Euler's proof that the
 sum of the reciprocal of the squares adds up to $\pi^2 /6$ . Euler required much
 more advanced mathematics and insight in order to come up with this equality, and
 he revisited the sum in multiple letters with slightly different arguments to

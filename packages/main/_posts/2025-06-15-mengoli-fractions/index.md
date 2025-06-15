@@ -1,5 +1,5 @@
 ---
-title: "Petri Mengoli Faction Inequality"
+title: "Petri Mengoli Fraction Inequality"
 tags: ["mathematics", "translation"]
 ---
 
@@ -60,4 +60,4 @@ $$
 And now knowing that the left hand side approaches 3 from above as $n\to\infty$, we know
 that $a$ can be set to $3$ as the largest value that still satisfies the expression.
 
-Hence, we find that the original inequality positted holds.
+Hence, we find that the original inequality posited holds.

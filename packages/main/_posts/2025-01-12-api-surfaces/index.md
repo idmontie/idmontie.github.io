@@ -6,7 +6,7 @@ tags: ["programming", "apis"]
 Maintaining growing software is challenging. Poorly architected APIs and
 incorrect abstractions can significantly impact the ability for engineering
 teams to deliver new features in a timely manner. If we consider an
-API's complixty as being a significant contributor to its overhead,
+API's complexity as being a significant contributor to its overhead,
 maintainability, and ease of use, then it becomes a question of how
 do we best measure this complexity so that we can make informed decisions
 about how to refactor and improve our APIs.
@@ -24,7 +24,7 @@ in order to use it. If we think of an  API as an abstract two dimensional
 surface, then the complexity of the internals of the API - all the code
 that is required to implement the API - is the area of that surface.
 The API that is exposed as functions, input parameters, and outputs is
-the perimeter of that surface. This follows from the conscept that an
+the perimeter of that surface. This follows from the concept that an
 API should act as a "black box" - the consumer should not need to know
 how the API is implemented in order to use it.
 
@@ -34,8 +34,8 @@ area of the surface.
 
 ## The Complexity of a Surface
 
-The percieved complexity of an API can be influenced by the number of functions,
-the numbner of parameters, and the number of return values.
+The perceived complexity of an API can be influenced by the number of functions,
+the number of parameters, and the number of return values.
 
 We will not be considering the internal state of the services that consumers
 may need to manage. Instead, we will focus on "idempotent" functions - those
@@ -94,7 +94,7 @@ values.
 ## Tests as Consumers
 
 Interestingly, the tests for an API already act as a consumer and can demonstrate
-the complexity of an API as it stives to cover all possible branches and use-cases.
+the complexity of an API as it strives to cover all possible branches and use-cases.
 For our function with 3 boolean inputs, we would need to write 8 tests to cover
 all possible input combinations. A suite of tests that check tons of combinations
 of inputs and outputs is a good indicator that the API is complex.
@@ -146,7 +146,7 @@ This reduces the number of possible input combinations from 8 to 3.
 
 This is one simple way to measure the complexity of an API, which shows
 that the bigger the surface area, the more complex the API. The majority
-of this complexity comes from thee combinations of input parameters and
+of this complexity comes from the combinations of input parameters and
 return values. By reducing the number of input parameters and return values,
 we can reduce the complexity of the API.
 

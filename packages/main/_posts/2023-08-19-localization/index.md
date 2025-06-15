@@ -3,11 +3,11 @@ title: Enforcing Localization through Types
 tags: ["typescript", "react"]
 ---
 
-When building web applications, enforcing that strings be localized to the user’s preferred language can sometimes be achieved via lint rules. But what if we could enforce proper localization using types in Typescript?
+When building web applications, enforcing that strings be localized to the user's preferred language can sometimes be achieved via lint rules. But what if we could enforce proper localization using types in TypeScript?
 
 ## Defining a Localized Type
 
-Typescript doesn’t natively provide an [Opaque type](https://en.wikipedia.org/wiki/Opaque_data_type) that we can use to define a string that has already been localized. If the data looks like a string, Typescript will consider it a string. We can however use utility types that simulate opaque types, like the Opaque definition in [type-fest](https://github.com/sindresorhus/type-fest):
+TypeScript doesn't natively provide an [Opaque type](https://en.wikipedia.org/wiki/Opaque_data_type) that we can use to define a string that has already been localized. If the data looks like a string, TypeScript will consider it a string. We can however use utility types that simulate opaque types, like the Opaque definition in [type-fest](https://github.com/sindresorhus/type-fest):
 
 ```tsx
 import { Opaque } from 'type-fest';
@@ -42,7 +42,7 @@ Now we have a type that we can use in our function and components to denote that
 
 ## Enforcing in Components
 
-The simplest way we can enforce that strings have already been localized is by using the type in our component’s props interface:
+The simplest way we can enforce that strings have already been localized is by using the type in our component's props interface:
 
 ```tsx
 
@@ -89,7 +89,7 @@ function Example() {
 
 ## Localizing Strings
 
-So far, we’ve been using a utility `createLocalizedString` to create and use the LocalizedString type. This utility is only really practical in unit tests. For real applications, we’ll want to use a translation function from [react-i18next](https://github.com/i18next/react-i18next) or [next-i18next](https://github.com/i18next/next-i18next) to do the heavy lifting. Then we just wrap the translation functions that are provided in order to use our type:
+So far, we've been using a utility `createLocalizedString` to create and use the LocalizedString type. This utility is only really practical in unit tests. For real applications, we'll want to use a translation function from [react-i18next](https://github.com/i18next/react-i18next) or [next-i18next](https://github.com/i18next/next-i18next) to do the heavy lifting. Then we just wrap the translation functions that are provided in order to use our type:
 
 ```tsx
 import React, { useCallback } from 'react';

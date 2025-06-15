@@ -28,11 +28,11 @@ const ChatTracking = {
 <button data-track={ChatTracking.send}>Send</button>
 ```
 
-We have a lot of string duplication here. We might be tempted to use template strings or some other way of creating the string, but it doesn’t end up reducing any of the duplication.
+We have a lot of string duplication here. We might be tempted to use template strings or some other way of creating the string, but it doesn't end up reducing any of the duplication.
 
 ## Passing Namespaces
 
-As the application grows more complex, an engineer working on another set of features ends up wanting to re-use the chat form from above. It already has some additional animation and composes together the component library widgets, why not re-use it in the context of forums.
+As the application grows more complex, an engineer working on another set of features ends up wanting to reuse the chat form from above. It already has some additional animation and composes the component library widgets, why not reuse it in the context of forums.
 
 Except now the `data-track` attribute has to be passed in as a prop:
 
@@ -45,13 +45,13 @@ graph TD
 
 ```
 
-The Forums usage ends up adding its own tracking attribute, but ends up having to prop-drill down the namespace from the Forums components, through the ChatForm, to the SendButton component.
+The Forums usage ends up adding its own tracking attribute, but ends up having to prop drill down the namespace from the Forums components, through the ChatForm, to the SendButton component.
 
 ## Using Context
 
 Instead, what if we wrap our features in some Context component that helps us track where our components are being used. Then we can just build up the tracking namespace based on where the component is in the feature tree, rather than having to keep track of long namespace strings.
 
-First let’s build a context in React:
+First let's build a context in React:
 
 **FeatureContext.tsx**
 
@@ -64,7 +64,7 @@ import { createContext } from 'react';
 export const FeatureContext = createContext<string[]>([]);
 ```
 
-Then we’ll create a helper component that we can use throughout the application:
+Then we'll create a helper component that we can use throughout the application:
 
 **Feature.tsx**
 
@@ -144,10 +144,10 @@ function SendButton() {
 }
 ```
 
-Note: the above example has been simplified for this article’s sake. Typically some utility for reading the context, joining the namespaces, and memoizing the value would be provided.
+Note: the above example has been simplified for this article's sake. Typically some utility for reading the context, joining the namespaces, and memoizing the value would be provided.
 
 No additional props are needed, and the Feature components can be used throughout the application as a standard mechanism for building up feature namespaces.
 
 ## Conclusion
 
-Rather than trying to alleviate string duplication and prop-drilling as separate problems, we can leverage React Context to solve both problems at the same time and leverage context to determine where we are in a feature tree. Not only does the Feature context help with constructing the data-track attributes, but it now provides a consistent mechanism that we can use throughout the application to let components know the feature namespace they are currently in without the parent components prop-drilling the namespace down to every component.
+Rather than trying to alleviate string duplication and prop drilling as separate problems, we can leverage React Context to solve both problems at the same time and leverage context to determine where we are in a feature tree. Not only does the Feature context help with constructing the data-track attributes, but it now provides a consistent mechanism that we can use throughout the application to let components know the feature namespace they are currently in without the parent components prop drilling the namespace down to every component.
