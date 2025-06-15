@@ -56,7 +56,7 @@ export function Footer() {
                             target="_blank"
                             rel="noopener noreferrer"
                             type="button"
-                            className="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5"
+                            className="m-1 h-9 w-9 rounded-full border-2 border-black uppercase leading-normal text-black transition duration-150 ease-in-out hover:bg-opacity-5 dark:border-white dark:text-white dark:hover:bg-black"
                         >
                             <GithubIcon />
                         </a>
@@ -65,7 +65,7 @@ export function Footer() {
                             target="_blank"
                             rel="noopener noreferrer"
                             type="button"
-                            className="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5"
+                            className="m-1 h-9 w-9 rounded-full border-2 border-black uppercase leading-normal text-black transition duration-150 ease-in-out hover:bg-opacity-5 dark:border-white dark:text-white dark:hover:bg-black"
                         >
                             <DevToIcon />
                         </a>
@@ -74,7 +74,7 @@ export function Footer() {
                             target="_blank"
                             rel="noopener noreferrer"
                             type="button"
-                            className="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5"
+                            className="m-1 h-9 w-9 rounded-full border-2 border-black uppercase leading-normal text-black transition duration-150 ease-in-out hover:bg-opacity-5 dark:border-white dark:text-white dark:hover:bg-black"
                         >
                             <MediumIcon />
                         </a>

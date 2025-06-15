@@ -9,9 +9,9 @@
             <link>https://idmontie.github.io</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 14 Jun 2025 23:54:42 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 15 Jun 2025 03:42:15 GMT</lastBuildDate>
         <atom:link href="https://idmontie.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 14 Jun 2025 23:54:42 GMT</pubDate>
+        <pubDate>Sun, 15 Jun 2025 03:42:15 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2025, idmontie]]></copyright>
         <item>
             <title><![CDATA[GPUs and Best Buy Queues]]></title>
@@ -21,7 +21,7 @@
             <pubDate>Mon, 16 Jun 2025 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[Petri Mengoli Faction Inequality]]></title>
+            <title><![CDATA[Petri Mengoli Fraction Inequality]]></title>
             <description><![CDATA[<p>In my previous post, <a href="/blog/post/2025-03-16-on-the-addition-of-fractions">&quot;On the Addition of Fractions, by Petri Mengoli&quot;</a>, I
 wrote that the following inequality holds, with no proof</p>]]></description>
             <link>https://idmontie.github.io/blog/post/2025-06-15-mengoli-fractions</link>
@@ -49,7 +49,7 @@ about it</a>).</p>]]></description>
             <description><![CDATA[<p>Maintaining growing software is challenging. Poorly architected APIs and
 incorrect abstractions can significantly impact the ability for engineering
 teams to deliver new features in a timely manner. If we consider an
-API&#x27;s complixty as being a significant contributor to its overhead,
+API&#x27;s complexity as being a significant contributor to its overhead,
 maintainability, and ease of use, then it becomes a question of how
 do we best measure this complexity so that we can make informed decisions
 about how to refactor and improve our APIs.</p>]]></description>
@@ -59,7 +59,7 @@ about how to refactor and improve our APIs.</p>]]></description>
         </item>
         <item>
             <title><![CDATA[The Breaking Point - Understanding the performance of your systems]]></title>
-            <description><![CDATA[<p>Every system has its limits. When designing and architecting systems, sometimes we as engineers like to assume things can scale infinitely. Maybe we can use larger machines, or maybe we can deploy more instances of a service. But even trying to scale systems isn’t magically infinite. It’s a smart move to understand the limitations of what we are building upfront so we can make better technology choices, and squeeze the performance out of our existing systems.</p>]]></description>
+            <description><![CDATA[<p>Every system has its limits. When designing and architecting systems, sometimes we as engineers like to assume things can scale infinitely. Maybe we can use larger machines, or maybe we can deploy more instances of a service. But even trying to scale systems isn&#x27;t magically infinite. It&#x27;s a smart move to understand the limitations of what we are building upfront so we can make better technology choices, and squeeze the performance out of our existing systems.</p>]]></description>
             <link>https://idmontie.github.io/blog/post/2023-12-08-the-breaking-point</link>
             <guid isPermaLink="false">2023-12-08-the-breaking-point</guid>
             <pubDate>Fri, 08 Dec 2023 00:00:00 GMT</pubDate>
@@ -73,14 +73,14 @@ about how to refactor and improve our APIs.</p>]]></description>
         </item>
         <item>
             <title><![CDATA[In Good Company, Impostor Syndrome]]></title>
-            <description><![CDATA[<p>We’ve all felt it at some point in our careers: that dreaded feeling of impostor syndrome kicking in as we find ourselves in over our heads. Questions like, “Am I truly qualified for this?” and “Are my peers facing the same challenges?” often plague our minds.</p>]]></description>
+            <description><![CDATA[<p>We&#x27;ve all felt it at some point in our careers: that dreaded feeling of impostor syndrome kicking in as we find ourselves in over our heads. Questions like, &quot;Am I truly qualified for this?&quot; and &quot;Are my peers facing the same challenges?&quot; often plague our minds.</p>]]></description>
             <link>https://idmontie.github.io/blog/post/2023-09-24-impostor-syndrome</link>
             <guid isPermaLink="false">2023-09-24-impostor-syndrome</guid>
             <pubDate>Sun, 24 Sep 2023 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Enforcing Localization through Types]]></title>
-            <description><![CDATA[<p>When building web applications, enforcing that strings be localized to the user’s preferred language can sometimes be achieved via lint rules. But what if we could enforce proper localization using types in Typescript?</p>]]></description>
+            <description><![CDATA[<p>When building web applications, enforcing that strings be localized to the user&#x27;s preferred language can sometimes be achieved via lint rules. But what if we could enforce proper localization using types in TypeScript?</p>]]></description>
             <link>https://idmontie.github.io/blog/post/2023-08-19-localization</link>
             <guid isPermaLink="false">2023-08-19-localization</guid>
             <pubDate>Sat, 19 Aug 2023 00:00:00 GMT</pubDate>
