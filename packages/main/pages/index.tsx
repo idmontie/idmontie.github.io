@@ -5,13 +5,16 @@ import type { Post } from "nextjs-blog-lib";
 import { projects } from "modules/portfolio/portfolio.server";
 import PageHeader from "modules/base/PageHeader";
 import { ProjectPreviewItem } from "modules/portfolio/components/ProjectPreviewItem";
-import { PostPreviewItem } from "modules/blog/components/PostPreviewItem";
+import {
+    PostPreviewItem,
+    PostPreviewItemProps,
+} from "modules/blog/components/PostPreviewItem";
 import { blog } from "modules/blog/blog.server";
 import { PrimaryButton } from "modules/base/PrimaryButton";
 import Link from "next/link";
 
 export interface IndexProps {
-    posts: Post[];
+    posts: PostPreviewItemProps["post"][];
     projects: Post[];
 }
 
@@ -81,7 +84,13 @@ export const getStaticProps: GetStaticProps = async () => {
 
     return {
         props: {
-            posts: blogPosts.slice(0, 3),
+            posts: blogPosts.slice(0, 3).map((post) => ({
+                slug: post.slug,
+                title: post.title,
+                date: post.date,
+                excerptHTML: post.excerptHTML,
+                excerptCode: post.excerptCode,
+            })),
             projects: projectPosts.slice(0, 4),
         },
     };

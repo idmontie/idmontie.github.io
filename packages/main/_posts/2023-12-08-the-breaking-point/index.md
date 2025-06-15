@@ -1,6 +1,7 @@
 ---
 title: The Breaking Point - Understanding the performance of your systems
 tags: ["architecture", "scaling"]
+image: ./splash.png
 ---
 
 Every system has its limits. When designing and architecting systems, sometimes we as engineers like to assume things can scale infinitely. Maybe we can use larger machines, or maybe we can deploy more instances of a service. But even trying to scale systems isn't magically infinite. It's a smart move to understand the limitations of what we are building upfront so we can make better technology choices, and squeeze the performance out of our existing systems.

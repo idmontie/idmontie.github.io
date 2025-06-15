@@ -12,9 +12,18 @@ export interface BlogSlugProps {
     headTitle: string;
     headKeywords: string;
     post: Post;
-    previous: Post | null;
-    next: Post | null;
+    previous: {
+        slug: string;
+        title: string;
+    } | null;
+    next: {
+        slug: string;
+        title: string;
+    } | null;
 }
+
+// TODO use next/config to get the site url
+const SITE_URL = "https://idmontie.github.io";
 
 function BlogSlug({
     headTitle,
@@ -23,6 +32,11 @@ function BlogSlug({
     previous,
     next,
 }: BlogSlugProps) {
+    const imagePartialPath = post.frontmatter.image as string | undefined;
+    const imageUrl = imagePartialPath
+        ? `${SITE_URL}/media/${post.slug}/${imagePartialPath}`
+        : undefined;
+
     const clientSideDate = useClientSideValue(() => {
         return new Date(post.date).toLocaleDateString();
     });
@@ -31,9 +45,30 @@ function BlogSlug({
         <div>
             <Head>
                 <title>{headTitle}</title>
-                <meta name="description" content={post.excerptHTML} />
+                <meta name="description" content={post.excerptRaw} />
                 {/* Add tags as meta keywords */}
                 <meta name="keywords" content={headKeywords} />
+
+                <meta property="og:title" content={headTitle} />
+                <meta property="og:description" content={post.excerptRaw} />
+                {imageUrl && <meta property="og:image" content={imageUrl} />}
+                <meta
+                    property="og:url"
+                    content={`${SITE_URL}/blog/post/${post.slug}`}
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:site_name" content="idmontie's Portfolio" />
+                <meta property="og:locale" content="en_US" />
+                <meta property="og:article:author" content="idmontie" />
+                <meta
+                    property="og:article:published_time"
+                    content={post.date}
+                />
+                <meta
+                    property="og:article:tag"
+                    content={post.tags.join(", ")}
+                />
+                <meta property="og:article:section" content="Blog" />
             </Head>
             <article className="px-6 md:px-0">
                 <header>
@@ -123,8 +158,18 @@ export const getStaticProps: GetStaticProps = async (context) => {
             // Generate on the server to avoid template string interpolation
             headKeywords: postData.post.tags.join(", "),
             post: postData.post,
-            previous: postData.previous,
-            next: postData.next,
-        } as BlogSlugProps,
+            previous: postData.previous
+                ? {
+                      slug: postData.previous.slug,
+                      title: postData.previous.title,
+                  }
+                : null,
+            next: postData.next
+                ? {
+                      slug: postData.next.slug,
+                      title: postData.next.title,
+                  }
+                : null,
+        } satisfies BlogSlugProps,
     };
 };

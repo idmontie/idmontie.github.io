@@ -1,11 +1,16 @@
 import { Card } from "modules/base/Card";
 import { useClientSideValue } from "modules/utilities/useClientSideValue";
 import Link from "next/link";
-import { Post } from "nextjs-blog-lib";
 import { RenderMarkdown } from "./RenderMarkdown";
 
 export interface PostPreviewItemProps {
-    post: Post;
+    post: {
+        slug: string;
+        title: string;
+        date: string;
+        excerptHTML: string;
+        excerptCode: string;
+    };
 }
 
 export function PostPreviewItem({ post }: PostPreviewItemProps) {

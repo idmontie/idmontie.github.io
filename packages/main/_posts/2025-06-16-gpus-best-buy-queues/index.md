@@ -1,6 +1,7 @@
 ---
 title: "GPUs and Best Buy Queues"
 tags: [technology, gpus]
+image: do-something.jpg
 ---
 
 At the height of the GPU craze, around 2021, when everyone was holed up in their homes due to COVID, the 30 series of Nvidia GPUs was extremely difficult to purchase. The scarcity was due to a few factors: the COVID pandemic had disrupted supply chains across the world, Taiwan was experiencing a severe drought that was impacting chip production, and cryptocurrency, especially ETH, was gaining value, making mining it was the latest GPU series incredibly lucrative.
