@@ -39,6 +39,7 @@
         "@svgr/webpack": "^5.4.0",
         "@testing-library/jest-dom": "^5.16.5",
         "@testing-library/react": "13.4.0",
+        "@testing-library/user-event": "^14.6.1",
         "@types/jest": "29.4.4",
         "@types/node": "^20.11.24",
         "@types/react": "^18.2.61",
@@ -82,9 +83,9 @@
         "tailwindcss": "3.2.4",
         "ts-jest": "29.0.5",
         "ts-node": "10.9.1",
+        "typescript": "^5.3.3",
         "url-loader": "^3.0.0",
-        "webpack": "^5.74.0",
-        "typescript": "^5.3.3"
+        "webpack": "^5.74.0"
     },
     "workspaces": [
         "packages/*"

@@ -1,5 +1,4 @@
 import { render, screen } from "@testing-library/react";
-import "@testing-library/jest-dom";
 import { AppLayout } from "./AppLayout";
 
 // Mock the Nav and Footer components to simplify testing

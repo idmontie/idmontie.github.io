@@ -13,9 +13,10 @@ export function Card({ children }: CardProps) {
     );
 }
 
-export function CardLink({ children, href }: CardProps & LinkProps) {
+export function CardLink({ children, href, ...props }: CardProps & LinkProps) {
     return (
         <Link
+            {...props}
             className="block flex-1 overflow-visible rounded-lg bg-white no-underline shadow-lg dark:bg-gray-800"
             href={href}
         >
