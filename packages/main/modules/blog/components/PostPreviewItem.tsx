@@ -22,7 +22,14 @@ export function PostPreviewItem({ post }: PostPreviewItemProps) {
         <Card>
             <div className="p-8 md:px-16">
                 <Link href={`/blog/post/${post.slug}`}>
-                    <h2 className="text-2xl font-bold">{post.title}</h2>
+                    <h2
+                        className="text-2xl font-bold"
+                        style={{
+                            viewTransitionName: `${post.slug}-title`,
+                        }}
+                    >
+                        {post.title}
+                    </h2>
                 </Link>
                 <div className="py-2 text-sm">{clientSideDate}</div>
                 <div className="prose dark:prose-dark py-4">

@@ -70,9 +70,11 @@ function BlogSlug({
                 />
                 <meta property="og:article:section" content="Blog" />
             </Head>
-            <article className="px-6 md:px-0">
+            <article className="px-6 md:px-6">
                 <header>
-                    <PageHeader>{post.title}</PageHeader>
+                    <PageHeader viewTransitionName={`${post.slug}-title`}>
+                        {post.title}
+                    </PageHeader>
 
                     {post.tags.length > 0 && (
                         <div className="flex flex-wrap">

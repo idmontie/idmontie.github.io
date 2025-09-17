@@ -12,6 +12,7 @@ import {
 import { blog } from "modules/blog/blog.server";
 import { PrimaryButton } from "modules/base/PrimaryButton";
 import Link from "next/link";
+import { SectionHeader } from "modules/base/SectionHeader";
 
 export interface IndexProps {
     posts: PostPreviewItemProps["post"][];
@@ -27,13 +28,11 @@ function Index({ posts, projects }: IndexProps) {
             </Head>
             <div className="px-4">
                 <header>
-                    <PageHeader>Welcome</PageHeader>
+                    <PageHeader>Ivan&apos;s Portfolio</PageHeader>
                 </header>
 
                 <section className="my-4">
-                    <h3 className="mb-4 text-center text-2xl font-bold">
-                        Latest Posts
-                    </h3>
+                    <SectionHeader>Latest Posts</SectionHeader>
 
                     <div className="grid grid-cols-1 gap-4">
                         {posts.map((post) => {
@@ -50,9 +49,7 @@ function Index({ posts, projects }: IndexProps) {
                     </div>
                 </section>
                 <section className="my-4 mt-12">
-                    <h3 className="mb-4 text-center text-2xl font-bold">
-                        Latest Projects
-                    </h3>
+                    <SectionHeader>Latest Projects</SectionHeader>
 
                     <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                         {projects.map((project) => {

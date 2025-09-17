@@ -12,7 +12,13 @@ export function ProjectPreviewItem({ project }: ProjectPreviewItemProps) {
             <div className="px-6 py-4">
                 <h4 className="text-xl font-semibold text-gray-800 dark:text-white">
                     <Link href={`/projects/${project.slug}`}>
-                        {project.title}
+                        <span
+                            style={{
+                                viewTransitionName: `${project.slug}-title`,
+                            }}
+                        >
+                            {project.title}
+                        </span>
                     </Link>
                 </h4>
             </div>
