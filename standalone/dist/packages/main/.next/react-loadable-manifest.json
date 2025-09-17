@@ -1,0 +1,22 @@
+{
+  "../../node_modules/mermaid/dist/mermaid-ae477ddf.js -> ./flowchart-elk-definition-170a3958.js": {
+    "id": 8306,
+    "files": [
+      "static/chunks/3ede58a6.c7976865bc064413.js",
+      "static/chunks/306.7e6bfd62aaee5a58.js"
+    ]
+  },
+  "../../node_modules/mermaid/dist/mermaid-ae477ddf.js -> ./mindmap-definition-44684416.js": {
+    "id": 7744,
+    "files": [
+      "static/chunks/5a7b57ef.4c93a2eecb73cb28.js",
+      "static/chunks/744.8c5d36e2efc48afa.js"
+    ]
+  },
+  "../../node_modules/mermaid/dist/mermaid-ae477ddf.js -> ./timeline-definition-8e5a9bc6.js": {
+    "id": 5149,
+    "files": [
+      "static/chunks/149.62d2f3c83b337d81.js"
+    ]
+  }
+}
