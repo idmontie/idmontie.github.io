@@ -27,7 +27,7 @@ export default {
         "!**/public/**",
         "!**/styles/**",
     ],
-    coverageReporters: ["json", "lcov", "text", "clover"],
+    coverageReporters: ["json", "lcov", ["text", { skipFull: true }], "clover"],
     coverageThreshold: {
         global: {
             branches: 80,
