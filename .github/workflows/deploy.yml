@@ -21,7 +21,7 @@ jobs:
           directory: ./packages/main
           file_name: .env.local
           fail_on_empty: false
-      - run: npm run build
+      - run: NX_DAEMON=false npm run build
       - uses: actions/upload-artifact@v4
         with:
           name: ui-dist

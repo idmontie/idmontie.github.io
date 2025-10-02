@@ -30,7 +30,7 @@ jobs:
           node-version: '20'
           cache: 'npm'
       - run: npm ci
-      - run: npm run build
+      - run: NX_DAEMON=false npm run build
   e2e:
     runs-on: ubuntu-latest
     steps:
@@ -39,7 +39,7 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-      - run: npm ci
+      - run: NX_DAEMON=false npm ci
       - uses: cypress-io/github-action@v4.2.0
         with:
           install: false
