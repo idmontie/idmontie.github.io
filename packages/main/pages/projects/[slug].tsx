@@ -40,12 +40,20 @@ function ProjectSlug({ headTitle, project, next, previous }: ProjectSlugProps) {
                     <PageHeader>{project.title}</PageHeader>
 
                     <div className="mb-4 text-center">
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img
-                            src={image}
-                            alt={project.title}
-                            className="m-auto"
-                        />
+                        <div className="relative m-auto w-full md:w-1/2">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img
+                                src={image}
+                                alt={project.title}
+                                className="absolute top-0 left-0 z-0 h-full w-full opacity-80 blur-xl"
+                            />
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img
+                                src={image}
+                                alt={project.title}
+                                className="relative z-10 m-auto"
+                            />
+                        </div>
                     </div>
 
                     <div className="py-4">

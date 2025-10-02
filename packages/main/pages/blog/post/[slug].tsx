@@ -107,7 +107,9 @@ function BlogSlug({
                                     as={Link}
                                     href={`/blog/post/${previous.slug}`}
                                 >
-                                    <span className="mr-2">←</span>
+                                    <span className="mr-2 align-text-top">
+                                        ←
+                                    </span>
                                     {previous.title}
                                 </OutlineButton>
                             ) : (
@@ -119,7 +121,9 @@ function BlogSlug({
                                     href={`/blog/post/${next.slug}`}
                                 >
                                     {next.title}
-                                    <span className="ml-2">→</span>
+                                    <span className="ml-2 align-text-top">
+                                        →
+                                    </span>
                                 </OutlineButton>
                             ) : (
                                 <div />
