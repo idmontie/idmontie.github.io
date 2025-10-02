@@ -13,6 +13,7 @@
         "lint:projects": "nx run-many --target=lint --fix --no-cloud",
         "lint:json": "npx prettier --write \"**/*.json\"",
         "test": "nx run-many --target=test --no-cloud",
+        "test:coverage": "nx run-many --target=test --no-cloud --coverage",
         "prepare": "husky install",
         "start": "nx run-many --target=serve --no-cloud",
         "start:ui": "next start"
