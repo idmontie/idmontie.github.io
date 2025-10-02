@@ -195,3 +195,5 @@ sketch
 migrations.json
 
 # End of https://www.toptal.com/developers/gitignore/api/nextjs,react,node
+.cursor/rules/nx-rules.mdc
+.github/instructions/nx.instructions.md

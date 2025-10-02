@@ -33,5 +33,6 @@
             }
         }
     },
-    "defaultProject": "main"
+    "defaultProject": "main",
+    "useInferencePlugins": false
 }
