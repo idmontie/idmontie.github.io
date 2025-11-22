@@ -11,7 +11,7 @@ export default function PageHeader({
 }: PageHeaderProps) {
     return (
         <h1
-            className="my-8 text-left text-3xl font-bold dark:text-white sm:text-center md:text-5xl"
+            className="my-8 text-left text-3xl font-bold dark:text-white sm:text-center md:text-5xl md:leading-normal"
             style={{
                 viewTransitionName,
             }}

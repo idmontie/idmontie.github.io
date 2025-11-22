@@ -20,7 +20,7 @@ $$
 Multiply through by $n$:
 
 $$
-\frac{n}{1-n} + \frac{b}{n + 1} + 1 > a.
+\frac{n}{1-n} + \frac{n}{n + 1} + 1 > a.
 $$
 
 Set a common denominator for the left hand side:

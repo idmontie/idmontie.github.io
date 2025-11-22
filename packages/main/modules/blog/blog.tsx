@@ -32,7 +32,7 @@ export const components = {
     },
     pre: (props: ComponentProps<"pre">) => {
         return (
-            <div className="overflow-auto rounded bg-gray-200 p-4 font-mono text-sm dark:bg-gray-800 dark:text-gray-100">
+            <div className="overflow-auto rounded-2xl bg-[#0e005d6d] p-4 font-mono text-sm dark:bg-[#0e005d6d] dark:text-gray-100">
                 <pre {...props} />
             </div>
         );

@@ -45,7 +45,6 @@ Now we have a type that we can use in our function and components to denote that
 The simplest way we can enforce that strings have already been localized is by using the type in our component's props interface:
 
 ```tsx
-
 interface ButtonProps {
   label: LocalizedString;
 }
