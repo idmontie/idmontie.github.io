@@ -9,10 +9,19 @@
             <link>https://idmontie.github.io</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 22 Nov 2025 23:55:40 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 07 Dec 2025 20:34:00 GMT</lastBuildDate>
         <atom:link href="https://idmontie.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 22 Nov 2025 23:55:40 GMT</pubDate>
+        <pubDate>Sun, 07 Dec 2025 20:34:00 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2025, idmontie]]></copyright>
+        <item>
+            <title><![CDATA[Forbidden Typescript: Spreading Type-holes]]></title>
+            <description><![CDATA[<p>I&#x27;ve discussed <a href="/blog/post/2023-08-14-partial-objects">full and partial objects before on this blog</a>, and in this article I&#x27;m going to investigate a common factory pattern
+in Typescript that can lead to type-holes.
+When writing tests or complex components, I&#x27;ll often create prop factory utilities.</p>]]></description>
+            <link>https://idmontie.github.io/blog/post/2025-12-07-spreading-type-holes</link>
+            <guid isPermaLink="false">2025-12-07-spreading-type-holes</guid>
+            <pubDate>Sun, 07 Dec 2025 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Thoughts on Naming Utility Functions]]></title>
             <description><![CDATA[<p>We all know that naming things is right up there in the top three most difficult things about programming, right next to concurrency and caching.</p>]]></description>
