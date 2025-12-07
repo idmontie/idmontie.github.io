@@ -9,10 +9,17 @@
             <link>https://idmontie.github.io</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 02 Oct 2025 18:26:29 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 22 Nov 2025 23:51:40 GMT</lastBuildDate>
         <atom:link href="https://idmontie.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Thu, 02 Oct 2025 18:26:29 GMT</pubDate>
+        <pubDate>Sat, 22 Nov 2025 23:51:40 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2025, idmontie]]></copyright>
+        <item>
+            <title><![CDATA[Thoughts on Naming Utility Functions]]></title>
+            <description><![CDATA[<p>We all know that naming things is right up there in the top three most difficult things about programming, right next to concurrency and caching.</p>]]></description>
+            <link>https://idmontie.github.io/blog/post/2025-11-22-naming-things</link>
+            <guid isPermaLink="false">2025-11-22-naming-things</guid>
+            <pubDate>Sat, 22 Nov 2025 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[GPUs and Best Buy Queues]]></title>
             <description><![CDATA[<p>At the height of the GPU craze, around 2021, when everyone was holed up in their homes due to COVID, the 30 series of Nvidia GPUs was extremely difficult to purchase. The scarcity was due to a few factors: the COVID pandemic had disrupted supply chains across the world, Taiwan was experiencing a severe drought that was impacting chip production, and cryptocurrency, especially ETH, was gaining value, making mining it was the latest GPU series incredibly lucrative.</p>]]></description>

@@ -6,7 +6,7 @@ image: do-something.jpg
 
 At the height of the GPU craze, around 2021, when everyone was holed up in their homes due to COVID, the 30 series of Nvidia GPUs was extremely difficult to purchase. The scarcity was due to a few factors: the COVID pandemic had disrupted supply chains across the world, Taiwan was experiencing a severe drought that was impacting chip production, and cryptocurrency, especially ETH, was gaining value, making mining it was the latest GPU series incredibly lucrative.
 
-<!--tuncate-->
+<!--truncate-->
 
 Since the supply was low and demand was high, this created two types of markets: one was the second hand market for GPUs where an \$800 GPU could go for \$3500 in cash when sold to someone mining cryptocurrency. Because of the massive mark up, buying and selling software to automate the process of buying GPUs when they "dropped" on a site was also growing as a market. These were called "bots" in the community, where customers trying to get a single GPU for their gaming PC were competing against hundreds of not thousands of bots flooding websites when they dropped. Common sites like Nvidia, AMD, Best Buy, and Zotac would get flooded with millions of requests when they added GPU stock the site.
 
