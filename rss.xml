@@ -9,10 +9,17 @@
             <link>https://idmontie.github.io</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 07 Dec 2025 20:34:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 25 Feb 2026 04:29:59 GMT</lastBuildDate>
         <atom:link href="https://idmontie.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 07 Dec 2025 20:34:00 GMT</pubDate>
-        <copyright><![CDATA[All rights reserved 2025, idmontie]]></copyright>
+        <pubDate>Wed, 25 Feb 2026 04:29:59 GMT</pubDate>
+        <copyright><![CDATA[All rights reserved 2026, idmontie]]></copyright>
+        <item>
+            <title><![CDATA[API Complexity Revisited]]></title>
+            <description><![CDATA[<p>In a previous article, I discussed <a href="/blog/post/2025-01-12-api-surfaces">Surfaces</a> as an abstraction on APIs and how we could measure complexity as the size of that surfaces&#x27; perimeter – the &quot;visible&quot; part of the API to consumers. I shared this article with a colleague who I was actively working closely with on a new implementation of a design system. They has some interesting feedback on different ways of reducing complexity of certain APIs that I felt compelled to revisit this topic.</p>]]></description>
+            <link>https://idmontie.github.io/blog/post/2026-02-01-api-complexity-revisited</link>
+            <guid isPermaLink="false">2026-02-01-api-complexity-revisited</guid>
+            <pubDate>Sun, 01 Feb 2026 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Forbidden Typescript: Spreading Type-holes]]></title>
             <description><![CDATA[<p>I&#x27;ve discussed <a href="/blog/post/2023-08-14-partial-objects">full and partial objects before on this blog</a>, and in this article I&#x27;m going to investigate a common factory pattern
