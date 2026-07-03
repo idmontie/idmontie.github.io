@@ -9,10 +9,17 @@
             <link>https://idmontie.github.io</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 02 Jul 2026 17:50:47 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 03 Jul 2026 22:43:59 GMT</lastBuildDate>
         <atom:link href="https://idmontie.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Thu, 02 Jul 2026 17:50:47 GMT</pubDate>
+        <pubDate>Fri, 03 Jul 2026 22:43:59 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2026, idmontie]]></copyright>
+        <item>
+            <title><![CDATA[Why view models?]]></title>
+            <description><![CDATA[<p>When writing React code, we often need to pull data from an API and manipulate that data to better match how we want to present it. Now that React hooks are ubiquitous, I have seen a lot of that data manipulation move into hooks that get re-used in multiple components.</p>]]></description>
+            <link>https://idmontie.github.io/blog/post/2026-07-03-why-view-models</link>
+            <guid isPermaLink="false">2026-07-03-why-view-models</guid>
+            <pubDate>Fri, 03 Jul 2026 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[What Makes a Good TODO?]]></title>
             <description><![CDATA[<p>We all end up doing it: <code>// TODO implement this function</code>, or <code>// TODO handle this edge case</code>. Often as we write code, we use <code>TODO</code>s to track ephemeral work, and typically clean them up as we go along. But sometimes we keep that <code>TODO</code> around, and it ends up in main. Then what?</p>]]></description>
