@@ -6,13 +6,7 @@ import { compiler, runner } from "modules/blog/blog.server";
 const projectOptions: Partial<BlogOptions> = {
     postsDirectory: join(process.cwd(), "_projects"),
     rewriteMediaUrls: {
-        mediaDirectory: join(
-            process.cwd(),
-            "packages",
-            "main",
-            "public",
-            "media"
-        ),
+        mediaDirectory: join(process.cwd(), "public", "media"),
         relativeDirectory: "/media",
     },
     mdx: {
