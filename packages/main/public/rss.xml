@@ -9,10 +9,24 @@
             <link>https://idmontie.github.io</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 25 Feb 2026 04:26:09 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 24 Aug 2026 18:40:37 GMT</lastBuildDate>
         <atom:link href="https://idmontie.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 25 Feb 2026 04:26:09 GMT</pubDate>
+        <pubDate>Mon, 24 Aug 2026 18:40:37 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2026, idmontie]]></copyright>
+        <item>
+            <title><![CDATA[Why view models?]]></title>
+            <description><![CDATA[<p>When writing React code, we often need to pull data from an API and manipulate that data to better match how we want to present it. Now that React hooks are ubiquitous, I have seen a lot of that data manipulation move into hooks that get re-used in multiple components.</p>]]></description>
+            <link>https://idmontie.github.io/blog/post/2026-07-03-why-view-models</link>
+            <guid isPermaLink="false">2026-07-03-why-view-models</guid>
+            <pubDate>Fri, 03 Jul 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[What Makes a Good TODO?]]></title>
+            <description><![CDATA[<p>We all end up doing it: <code>// TODO implement this function</code>, or <code>// TODO handle this edge case</code>. Often as we write code, we use <code>TODO</code>s to track ephemeral work, and typically clean them up as we go along. But sometimes we keep that <code>TODO</code> around, and it ends up in main. Then what?</p>]]></description>
+            <link>https://idmontie.github.io/blog/post/2026-07-02-what-makes-good-todo</link>
+            <guid isPermaLink="false">2026-07-02-what-makes-good-todo</guid>
+            <pubDate>Thu, 02 Jul 2026 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[API Complexity Revisited]]></title>
             <description><![CDATA[<p>In a previous article, I discussed <a href="/blog/post/2025-01-12-api-surfaces">Surfaces</a> as an abstraction on APIs and how we could measure complexity as the size of that surfaces&#x27; perimeter – the &quot;visible&quot; part of the API to consumers. I shared this article with a colleague who I was actively working closely with on a new implementation of a design system. They has some interesting feedback on different ways of reducing complexity of certain APIs that I felt compelled to revisit this topic.</p>]]></description>

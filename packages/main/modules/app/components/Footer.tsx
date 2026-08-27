@@ -45,7 +45,7 @@ function MediumIcon() {
 
 export function Footer() {
     return (
-        <footer className="width-full border-top bg-gray-light my-4 mx-auto max-w-[1200px] p-4">
+        <footer className="width-full border-top bg-gray-light mx-auto max-w-[1200px] p-4 py-4">
             <div className="mb-6 flex justify-center"></div>
 
             <div className="flex-justify-between flex px-3 text-gray-700 dark:text-gray-300">
