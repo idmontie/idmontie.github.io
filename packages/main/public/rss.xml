@@ -9,10 +9,17 @@
             <link>https://idmontie.github.io</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 24 Aug 2026 18:40:37 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 27 Aug 2026 23:00:52 GMT</lastBuildDate>
         <atom:link href="https://idmontie.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 24 Aug 2026 18:40:37 GMT</pubDate>
+        <pubDate>Thu, 27 Aug 2026 23:00:52 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2026, idmontie]]></copyright>
+        <item>
+            <title><![CDATA[Toasts Are Harder Than They Look]]></title>
+            <description><![CDATA[<p>Accessibility problems usually have recognizable solutions. A button needs an accessible name, text needs sufficient contrast, and a modal needs sensible focus management.</p>]]></description>
+            <link>https://idmontie.github.io/blog/post/2026-08-27-toasts</link>
+            <guid isPermaLink="false">2026-08-27-toasts</guid>
+            <pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Why view models?]]></title>
             <description><![CDATA[<p>When writing React code, we often need to pull data from an API and manipulate that data to better match how we want to present it. Now that React hooks are ubiquitous, I have seen a lot of that data manipulation move into hooks that get re-used in multiple components.</p>]]></description>
