@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+Disallow: /admin/
+Disallow: /login/
+Disallow: /api/
+Disallow: /search/
+Disallow: /preview/
+Disallow: /drafts/
+
+Allow: /_next/static/
+Allow: /images/
+Allow: /assets/
