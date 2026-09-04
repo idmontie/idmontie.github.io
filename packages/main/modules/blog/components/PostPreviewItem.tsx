@@ -2,7 +2,7 @@ import { useClientSideValue } from "modules/utilities/useClientSideValue";
 import Link from "next/link";
 import { PrimaryTag } from "modules/base/PrimaryTag";
 import { TagList } from "modules/base/Tag";
-import { DocumentIcon } from "./icons";
+import { getPreviewIllustration } from "./icons/previews/getPreviewIllustration";
 import { RenderMarkdown } from "./RenderMarkdown";
 
 export interface PostPreviewItemProps {
@@ -24,6 +24,7 @@ export function PostPreviewItem({ post }: PostPreviewItemProps) {
             year: "numeric",
         }).format(new Date(post.date));
     });
+    const Preview = getPreviewIllustration(post.tags);
 
     return (
         <article>
@@ -31,8 +32,8 @@ export function PostPreviewItem({ post }: PostPreviewItemProps) {
                 href={`/blog/post/${post.slug}`}
                 className="group grid gap-5 px-6 py-6 transition-colors hover:bg-slate-200/20 dark:hover:bg-slate-800/20 sm:grid-cols-[80px_minmax(0,1fr)] lg:grid-cols-[88px_minmax(0,1fr)_120px]"
             >
-                <div className="size-20 lg:size-[88px] flex shrink-0 items-center justify-center overflow-hidden rounded-xl border border-slate-200 bg-slate-50 text-blue-400 dark:border-slate-800 dark:bg-slate-900/70 dark:text-blue-400">
-                    <DocumentIcon />
+                <div className="size-20 lg:size-[88px] flex aspect-square shrink-0 items-center justify-center overflow-hidden rounded-xl border border-slate-200 bg-slate-50 text-blue-400 dark:border-slate-800 dark:bg-slate-900/70 dark:text-blue-400">
+                    <Preview />
                 </div>
 
                 <div className="min-w-0">
