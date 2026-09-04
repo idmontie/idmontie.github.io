@@ -3,23 +3,24 @@ import { GetStaticProps } from "next";
 import Head from "next/head";
 import type { Post } from "nextjs-blog-lib";
 import { projects } from "modules/portfolio/portfolio.server";
-import PageHeader from "modules/base/PageHeader";
 import { ProjectPreviewItem } from "modules/portfolio/components/ProjectPreviewItem";
-import {
-    PostPreviewItem,
-    PostPreviewItemProps,
-} from "modules/blog/components/PostPreviewItem";
+import { PostPreviewItem } from "modules/blog/components/PostPreviewItem";
 import { blog } from "modules/blog/blog.server";
-import { PrimaryButton } from "modules/base/PrimaryButton";
 import Link from "next/link";
-import { SectionHeader } from "modules/base/SectionHeader";
+import {
+    FeaturedPost,
+    FeaturedPostProps,
+    getReadingTimeMinutes,
+} from "modules/blog/components/FeaturedPost";
 
 export interface IndexProps {
-    posts: PostPreviewItemProps["post"][];
+    posts: FeaturedPostProps["post"][];
     projects: Post[];
 }
 
 function Index({ posts, projects }: IndexProps) {
+    const featuredPost = posts[0];
+
     return (
         <div>
             <Head>
@@ -27,31 +28,42 @@ function Index({ posts, projects }: IndexProps) {
                 <meta name="description" content="Latest projects" />
             </Head>
             <div className="px-4">
-                <header>
-                    <PageHeader>Ivan&apos;s Portfolio</PageHeader>
-                </header>
+                {featuredPost ? (
+                    <section className="my-4">
+                        <FeaturedPost post={featuredPost} />
+                    </section>
+                ) : null}
+                <section className="my-8">
+                    <div className="flex items-center justify-between">
+                        <h2 className="text-xl font-bold">Latest Posts</h2>
+                        <Link
+                            href="/blog"
+                            className="text-sm text-blue-700 hover:text-blue-800 dark:text-blue-300 dark:hover:text-blue-500"
+                        >
+                            View all posts →
+                        </Link>
+                    </div>
 
-                <section className="my-4">
-                    <SectionHeader>Latest Posts</SectionHeader>
-
-                    <div className="grid grid-cols-1 gap-4">
+                    <div className="mt-4 grid grid-cols-1 gap-4">
                         {posts.map((post) => {
                             return (
                                 <PostPreviewItem key={post.slug} post={post} />
                             );
                         })}
                     </div>
-
-                    <div className="mt-4 text-center">
-                        <PrimaryButton as={Link} href="/blog">
-                            View All
-                        </PrimaryButton>
-                    </div>
                 </section>
                 <section className="my-4 mt-12">
-                    <SectionHeader>Latest Projects</SectionHeader>
+                    <div className="flex items-center justify-between">
+                        <h2 className="text-xl font-bold">Latest Projects</h2>
+                        <Link
+                            href="/portfolio"
+                            className="text-sm text-blue-700 hover:text-blue-800 dark:text-blue-300 dark:hover:text-blue-500"
+                        >
+                            View all projects →
+                        </Link>
+                    </div>
 
-                    <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+                    <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2">
                         {projects.map((project) => {
                             return (
                                 <ProjectPreviewItem
@@ -60,12 +72,6 @@ function Index({ posts, projects }: IndexProps) {
                                 />
                             );
                         })}
-                    </div>
-
-                    <div className="mt-4 text-center">
-                        <PrimaryButton as={Link} href="/portfolio">
-                            View All
-                        </PrimaryButton>
                     </div>
                 </section>
             </div>
@@ -81,12 +87,14 @@ export const getStaticProps: GetStaticProps = async () => {
 
     return {
         props: {
-            posts: blogPosts.slice(0, 3).map((post) => ({
+            posts: blogPosts.slice(0, 4).map((post) => ({
                 slug: post.slug,
                 title: post.title,
                 date: post.date,
                 excerptHTML: post.excerptHTML,
                 excerptCode: post.excerptCode,
+                tags: post.tags,
+                readingTimeMinutes: getReadingTimeMinutes(post.contentRaw),
             })),
             projects: projectPosts.slice(0, 4),
         },

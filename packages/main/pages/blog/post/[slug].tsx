@@ -7,6 +7,8 @@ import { RenderMarkdown } from "modules/blog/components/RenderMarkdown";
 import { blog } from "modules/blog/blog.server";
 import PageHeader from "modules/base/PageHeader";
 import { OutlineButton } from "modules/base/OutlineButton";
+import { PrimaryTag } from "modules/base/PrimaryTag";
+import { TagList } from "modules/base/Tag";
 
 export interface BlogSlugProps {
     headTitle: string;
@@ -77,19 +79,17 @@ function BlogSlug({
                     </PageHeader>
 
                     {post.tags.length > 0 && (
-                        <div className="flex flex-wrap">
-                            {post.tags.map((tag) => {
-                                return (
-                                    <Link
-                                        className="mr-2 mb-2 rounded-md bg-gray-100 px-2 py-1 text-sm capitalize dark:bg-gray-800"
-                                        key={tag}
-                                        href={`/blog/tag/${tag}`}
-                                    >
-                                        {tag}
-                                    </Link>
-                                );
-                            })}
-                        </div>
+                        <TagList className="mb-2">
+                            {post.tags.map((tag) => (
+                                <PrimaryTag
+                                    key={tag}
+                                    as={Link}
+                                    href={`/blog/tag/${tag}`}
+                                >
+                                    {tag}
+                                </PrimaryTag>
+                            ))}
+                        </TagList>
                     )}
                     <div className="mb-6 text-sm">Posted: {clientSideDate}</div>
                 </header>

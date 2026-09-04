@@ -14,7 +14,7 @@ export function Toggle({ prefix, suffix, checked, onChange }: ToggleProps) {
             htmlFor="toggle"
             className="relative flex w-fit cursor-pointer items-center"
         >
-            {prefix}
+            <span className="pr-1">{prefix}</span>
             <input
                 type="checkbox"
                 id="toggle"
@@ -57,7 +57,7 @@ export function Toggle({ prefix, suffix, checked, onChange }: ToggleProps) {
                     }
                 )}
             />
-            {suffix}
+            <span className="pl-1">{suffix}</span>
         </label>
     );
 }

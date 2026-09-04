@@ -1,28 +1,11 @@
-import { ReactNode } from "react";
+import { Tag, TagProps } from "./Tag";
 
-export interface SecondaryTagProps {
-    children: ReactNode;
-}
+export type SecondaryTagProps = Omit<TagProps, "variant">;
 
-export function SecondaryTag({ children }: SecondaryTagProps) {
+export function SecondaryTag<T>({ children, ...props }: SecondaryTagProps & T) {
     return (
-        <span
-            className={`
-                inline-block
-                whitespace-nowrap
-                rounded
-                bg-purple-600
-                py-1
-                px-2.5
-                text-center
-                align-baseline
-                text-xs
-                font-bold
-                leading-none
-                text-white
-            `}
-        >
+        <Tag variant="secondary" {...props}>
             {children}
-        </span>
+        </Tag>
     );
 }

@@ -1,28 +1,11 @@
-import { ReactNode } from "react";
+import { Tag, TagProps } from "./Tag";
 
-export interface PrimaryTagProps {
-    children: ReactNode;
-}
+export type PrimaryTagProps = Omit<TagProps, "variant">;
 
-export function PrimaryTag({ children }: PrimaryTagProps) {
+export function PrimaryTag<T>({ children, ...props }: PrimaryTagProps & T) {
     return (
-        <span
-            className={`
-                inline-block
-                whitespace-nowrap
-                rounded
-                bg-blue-600
-                py-1
-                px-2.5
-                text-center
-                align-baseline
-                text-xs
-                font-bold
-                leading-none
-                text-white
-            `}
-        >
+        <Tag variant="primary" {...props}>
             {children}
-        </span>
+        </Tag>
     );
 }

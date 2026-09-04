@@ -8,6 +8,7 @@ import { PrimaryButton } from "modules/base/PrimaryButton";
 import { SecondaryButton } from "modules/base/SeconaryButton";
 import { PrimaryTag } from "modules/base/PrimaryTag";
 import { SecondaryTag } from "modules/base/SecondaryTag";
+import { TagList } from "modules/base/Tag";
 import { OutlineButton } from "modules/base/OutlineButton";
 import Link from "next/link";
 
@@ -84,14 +85,14 @@ function ProjectSlug({ headTitle, project, next, previous }: ProjectSlugProps) {
                             </SecondaryButton>
                         )}
                     </div>
-                    <div className="mb-4 space-x-2">
+                    <TagList className="mb-4">
                         {languageTags?.map((tag) => (
                             <PrimaryTag key={tag}>{tag}</PrimaryTag>
                         ))}
                         {frameworkTags?.map((tag) => (
                             <SecondaryTag key={tag}>{tag}</SecondaryTag>
                         ))}
-                    </div>
+                    </TagList>
                 </header>
                 <main className="mt-8">
                     <div className="prose dark:prose-dark">
