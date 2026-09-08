@@ -9,10 +9,17 @@
             <link>https://idmontie.github.io</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 05 Sep 2026 23:26:22 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 08 Sep 2026 23:22:26 GMT</lastBuildDate>
         <atom:link href="https://idmontie.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 05 Sep 2026 23:26:22 GMT</pubDate>
+        <pubDate>Tue, 08 Sep 2026 23:22:26 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2026, idmontie]]></copyright>
+        <item>
+            <title><![CDATA[Are Crawlers Our Primary Consumers?]]></title>
+            <description><![CDATA[<p>What happens to SEO when the crawler itself becomes one of your primary consumers?</p>]]></description>
+            <link>https://idmontie.github.io/blog/post/2026-09-08-are-crawlers-our-primary-consumers</link>
+            <guid isPermaLink="false">2026-09-08-are-crawlers-our-primary-consumers</guid>
+            <pubDate>Tue, 08 Sep 2026 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[The Basel Problem]]></title>
             <description><![CDATA[<p>When we last looked at the <a href="/blog/post/2025-03-16-on-the-addition-of-fractions">On the Addition of Fractions</a>, I covered a proof
