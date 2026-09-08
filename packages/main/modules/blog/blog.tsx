@@ -3,6 +3,16 @@ import { CardLink } from "modules/base/Card";
 import { ComponentProps } from "react";
 
 export const components = {
+    Separator: () => {
+        // Three horizontal dots with spacing between them
+        return (
+            <div className="flex w-full items-center justify-center gap-2 py-4">
+                <div className="!m-0 h-1 w-1 rounded-full bg-gray-300" />
+                <div className="!m-0 h-1 w-1 rounded-full bg-gray-300" />
+                <div className="!m-0 h-1 w-1 rounded-full bg-gray-300" />
+            </div>
+        );
+    },
     blockquote: ({ children }: { children: React.ReactNode }) => {
         return (
             <blockquote className="border-l-4 border-gray-300 pl-4">
