@@ -1,6 +1,7 @@
 ---
 title: "On the Addition of Fractions, by Petri Mengoli"
 tags: ["mathematics", "translation"]
+series: "Introduction to the Riemann Hypothesis"
 ---
 
 I was researching the origin of the Basel problem to write a short blog post about

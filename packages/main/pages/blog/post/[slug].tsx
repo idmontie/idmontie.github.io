@@ -43,6 +43,9 @@ function BlogSlug({
         return new Date(post.date).toLocaleDateString();
     });
 
+    const series = post.frontmatter.series;
+    const seriesName = typeof series === "string" && series ? series : null;
+
     return (
         <div>
             <Head>
@@ -78,8 +81,16 @@ function BlogSlug({
                         {post.title}
                     </PageHeader>
 
-                    {post.tags.length > 0 && (
+                    {(seriesName || post.tags.length > 0) && (
                         <TagList className="mb-2">
+                            {seriesName && (
+                                <PrimaryTag
+                                    as={Link}
+                                    href={`/blog/series/${seriesName}`}
+                                >
+                                    {seriesName}
+                                </PrimaryTag>
+                            )}
                             {post.tags.map((tag) => (
                                 <PrimaryTag
                                     key={tag}

@@ -1,6 +1,7 @@
 ---
 title: "Forbidden Typescript: Spreading Type-holes"
 tags: [technology, programming, react, typescript]
+series: "Forbidden Typescript"
 ---
 
 I've discussed [full and partial objects before on this blog](/blog/post/2023-08-14-partial-objects), and in this article I'm going to investigate a common factory pattern

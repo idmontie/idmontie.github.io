@@ -14,7 +14,7 @@ framework_tags:
 view_link: https://couchsurfing.com
 ---
 
-Architected and built Couchsurfing’s next-generation web platform, establishing a modern React, TypeScript, Next.js, Nx, and Node/NestJS architecture to support the company’s transition from its legacy application stack.
+During my time at Coushsurfing, I architected and built Couchsurfing’s next-generation web platform, establishing a modern React, TypeScript, Next.js, Nx, and Node/NestJS architecture to support the company’s transition from its legacy application stack.
 
 Couchsurfing is a global travel platform that connects travelers with local hosts who open their homes to guests for free, creating opportunities for cultural exchange and shared experiences. The platform supports real-time messaging, trip and stay management, host discovery, local events, and destination-specific community experiences. Users could communicate via real-time chat, powered by Stream. This was an enormous improvement over the legacy version of inbox style messaging.
 

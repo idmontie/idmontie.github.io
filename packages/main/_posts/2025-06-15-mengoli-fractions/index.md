@@ -1,6 +1,7 @@
 ---
 title: "Petri Mengoli Fraction Inequality"
 tags: ["mathematics", "translation"]
+series: "Introduction to the Riemann Hypothesis"
 ---
 
 In my previous post, ["On the Addition of Fractions, by Petri Mengoli"](/blog/post/2025-03-16-on-the-addition-of-fractions), I

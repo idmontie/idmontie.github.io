@@ -1,6 +1,7 @@
 ---
 title: "Forbidden Typescript: full/partial objects"
 tags: ["typescript"]
+series: "Forbidden Typescript"
 ---
 
 When trying to be as type-safe as possible in Typescript, there are times when you may have to dynamically construct an object. You know as a programmer that all the keys will have values, but because you have to dynamically construct the values, the type system doesn’t know that the object is complete:

@@ -4,6 +4,8 @@ import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
     { label: "Writing", href: "/blog" },
+    { label: "Tags", href: "/blog/tag" },
+    { label: "Series", href: "/blog/series" },
     { label: "Projects", href: "/portfolio" },
     { label: "GitHub", href: "https://github.com/idmontie", external: true },
 ];

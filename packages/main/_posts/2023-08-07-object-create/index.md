@@ -1,6 +1,7 @@
 ---
 title: "Forbidden Typescript: Using Object.create to clone"
 tags: [typescript]
+series: "Forbidden Typescript"
 ---
 
 In “Javascript: The Definitive Guide” there is an example that uses `Object.inherit` to inherit the prototype change. JavaScript defines a method `Object.create` that creates a new object using the given argument as the prototype of that object. Translating the examples from The Definitive Guide to Typescript, it looks like:

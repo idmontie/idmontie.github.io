@@ -1,6 +1,7 @@
 ---
 title: "The Basel Problem"
 tags: ["mathematics"]
+series: "Introduction to the Riemann Hypothesis"
 ---
 
 When we last looked at the [On the Addition of Fractions](/blog/post/2025-03-16-on-the-addition-of-fractions), I covered a proof
