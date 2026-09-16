@@ -1,7 +1,7 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 import type { Post } from "nextjs-blog-lib";
-import { RenderMarkdown } from "modules/blog/components/RenderMarkdown";
+import { RenderMarkdownWithMermaid } from "modules/blog/components/RenderMarkdownWithMermaid";
 import PageHeader from "modules/base/PageHeader";
 import { projects } from "modules/portfolio/portfolio.server";
 import { PrimaryButton } from "modules/base/PrimaryButton";
@@ -96,7 +96,7 @@ function ProjectSlug({ headTitle, project, next, previous }: ProjectSlugProps) {
                 </header>
                 <main className="mt-8">
                     <div className="prose dark:prose-dark">
-                        <RenderMarkdown
+                        <RenderMarkdownWithMermaid
                             html={project.contentHTML}
                             code={project.contentCode}
                         />

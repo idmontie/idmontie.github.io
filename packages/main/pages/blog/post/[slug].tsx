@@ -3,13 +3,14 @@ import Head from "next/head";
 import Link from "next/link";
 import type { Post } from "nextjs-blog-lib";
 import { useClientSideValue } from "modules/utilities/useClientSideValue";
-import { RenderMarkdown } from "modules/blog/components/RenderMarkdown";
+import { RenderMarkdownWithMermaid } from "modules/blog/components/RenderMarkdownWithMermaid";
 import { blog } from "modules/blog/blog.server";
 import PageHeader from "modules/base/PageHeader";
 import { OutlineButton } from "modules/base/OutlineButton";
 import { PrimaryTag } from "modules/base/PrimaryTag";
 import { TagList } from "modules/base/Tag";
 import { absoluteSiteUrl } from "utilities/site";
+import { buildBlogPostingJsonLd } from "modules/blog/blog-post-json-ld";
 
 export interface BlogSlugProps {
     headTitle: string;
@@ -37,6 +38,8 @@ function BlogSlug({
     const imageUrl = imagePartialPath
         ? absoluteSiteUrl(`/media/${post.slug}/${imagePartialPath}`)
         : undefined;
+
+    const blogPostingJsonLd = buildBlogPostingJsonLd(post, { imageUrl });
 
     const clientSideDate = useClientSideValue(() => {
         return new Date(post.date).toLocaleDateString();
@@ -70,6 +73,12 @@ function BlogSlug({
                     content={post.tags.join(", ")}
                 />
                 <meta property="og:article:section" content="Blog" />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify(blogPostingJsonLd),
+                    }}
+                />
             </Head>
             <article className="px-6 md:px-6">
                 <header>
@@ -102,7 +111,7 @@ function BlogSlug({
                 </header>
                 <main>
                     <div className="prose dark:prose-dark">
-                        <RenderMarkdown
+                        <RenderMarkdownWithMermaid
                             html={post.contentHTML}
                             code={post.contentCode}
                         />

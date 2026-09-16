@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { PAGE_SIZE } from "modules/blog/blog";
+import { PAGE_SIZE } from "modules/blog/blog-constants";
 import { blog } from "modules/blog/blog.server";
 import { groupPostsBySeries } from "modules/blog/series";
 import { projects } from "modules/portfolio/portfolio.server";

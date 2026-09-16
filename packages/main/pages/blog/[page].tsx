@@ -2,7 +2,7 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import { PAGE_SIZE } from "modules/blog/blog";
+import { PAGE_SIZE } from "modules/blog/blog-constants";
 import { PostPreviewItem } from "modules/blog/components/PostPreviewItem";
 import type { Post } from "nextjs-blog-lib";
 import { blog } from "modules/blog/blog.server";

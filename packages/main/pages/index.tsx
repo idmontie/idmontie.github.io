@@ -12,13 +12,15 @@ import {
     FeaturedPostProps,
     getReadingTimeMinutes,
 } from "modules/blog/components/FeaturedPost";
+import { absoluteSiteUrl } from "utilities/site";
 
 export interface IndexProps {
     posts: FeaturedPostProps["post"][];
     projects: Post[];
+    homePageJsonLd: Record<string, unknown>;
 }
 
-function Index({ posts, projects }: IndexProps) {
+function Index({ posts, projects, homePageJsonLd }: IndexProps) {
     const featuredPost = posts[0];
 
     return (
@@ -26,6 +28,12 @@ function Index({ posts, projects }: IndexProps) {
             <Head>
                 <title>Welcome - idmontie&apos;s Portfolio</title>
                 <meta name="description" content="Latest projects" />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify(homePageJsonLd),
+                    }}
+                />
             </Head>
             <div className="px-4">
                 {featuredPost ? (
@@ -97,6 +105,13 @@ export const getStaticProps: GetStaticProps = async () => {
                 readingTimeMinutes: getReadingTimeMinutes(post.contentRaw),
             })),
             projects: projectPosts.slice(0, 4),
+            homePageJsonLd: {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                name: "Welcome - idmontie's Portfolio",
+                url: absoluteSiteUrl("/"),
+                description: "Latest projects",
+            },
         },
     };
 };

@@ -3,7 +3,7 @@ import { GetStaticProps } from "next";
 import Link from "next/link";
 import Head from "next/head";
 import type { Post } from "nextjs-blog-lib";
-import { PAGE_SIZE } from "modules/blog/blog";
+import { PAGE_SIZE } from "modules/blog/blog-constants";
 import { PostPreviewItem } from "modules/blog/components/PostPreviewItem";
 import { blog } from "modules/blog/blog.server";
 import PageHeader from "modules/base/PageHeader";

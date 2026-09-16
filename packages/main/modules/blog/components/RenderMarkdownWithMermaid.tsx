@@ -1,24 +1,22 @@
 import { run, RunOptions } from "@mdx-js/mdx";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import * as runtime from "react/jsx-runtime";
+import type { MermaidProps } from "mdx-mermaid/lib/Mermaid";
 import { mdxComponentsBase } from "../mdx-components";
+import { MermaidDiagram } from "./MermaidDiagram";
+import type { MdxRenderType, RenderMarkdownProps } from "./RenderMarkdown";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export type MdxRenderType = React.FC<{ components: Record<string, any> }>;
-
-export interface RenderMarkdownProps {
-    html: string;
-    code: string;
-}
-
-const previewMdxComponents = {
-    ...mdxComponentsBase,
-    Mermaid: () => null,
-};
-
-export function RenderMarkdown({ html, code }: RenderMarkdownProps) {
+export function RenderMarkdownWithMermaid({ html, code }: RenderMarkdownProps) {
     const [MdxComponent, setMdxComponent] = useState<MdxRenderType | null>(
         null
+    );
+
+    const mdxComponents = useMemo(
+        () => ({
+            ...mdxComponentsBase,
+            Mermaid: MermaidDiagram as React.ComponentType<MermaidProps>,
+        }),
+        []
     );
 
     useEffect(() => {
@@ -33,7 +31,7 @@ export function RenderMarkdown({ html, code }: RenderMarkdownProps) {
     return (
         <div>
             {MdxComponent ? (
-                <MdxComponent components={previewMdxComponents} />
+                <MdxComponent components={mdxComponents} />
             ) : (
                 <div dangerouslySetInnerHTML={{ __html: html }} />
             )}
