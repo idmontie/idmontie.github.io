@@ -1,6 +1,8 @@
 User-agent: *
 Allow: /
 
+Sitemap: https://idmontie.github.io/sitemap.xml
+
 Disallow: /admin/
 Disallow: /login/
 Disallow: /api/
