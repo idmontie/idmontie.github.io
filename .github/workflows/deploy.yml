@@ -7,23 +7,26 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: '20'
           cache: 'npm'
       - run: npm ci
       - name: Make envfile
-        uses: SpicyPizza/create-envfile@v1.3
-        with:
-          envkey_NEXT_PUBLIC_BUGSNAG_API_KEY: ${{ secrets.BUGSNAG_KEY }}
-          envkey_NEXT_PUBLIC_GA_MEASUREMENT_ID: ${{ secrets.GA_MEASUREMENT_ID }}
-          envkey_NEXT_PUBLIC_SITE_URL: https://idmontie.github.io
-          directory: ./packages/main
-          file_name: .env.local
-          fail_on_empty: false
+        working-directory: ./packages/main
+        env:
+          NEXT_PUBLIC_BUGSNAG_API_KEY: ${{ secrets.BUGSNAG_KEY }}
+          NEXT_PUBLIC_GA_MEASUREMENT_ID: ${{ secrets.GA_MEASUREMENT_ID }}
+          NEXT_PUBLIC_SITE_URL: https://idmontie.github.io
+        run: |
+          {
+            printf 'NEXT_PUBLIC_BUGSNAG_API_KEY=%s\n' "$NEXT_PUBLIC_BUGSNAG_API_KEY"
+            printf 'NEXT_PUBLIC_GA_MEASUREMENT_ID=%s\n' "$NEXT_PUBLIC_GA_MEASUREMENT_ID"
+            printf 'NEXT_PUBLIC_SITE_URL=%s\n' "$NEXT_PUBLIC_SITE_URL"
+          } > .env.local
       - run: NX_DAEMON=false npm run build
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: ui-dist
           path: dist
@@ -33,17 +36,17 @@ jobs:
     needs: [build]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: '20'
           cache: 'npm'
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v7
         with:
           name: ui-dist
           path: dist
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist/packages/main/.next
@@ -52,12 +55,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check the deployed service URL
-        uses: jtalk/url-health-check-action@v3
+        uses: jtalk/url-health-check-action@v5
         with:
-          # Check the following URLs one by one sequentially
-          url: |
-            https://idmontie.github.io
-            https://idmontie.github.io/sitemap.xml
+          # Pipe-separated; the action does not split on newlines
+          url: https://idmontie.github.io|https://idmontie.github.io/sitemap.xml
           follow-redirect: false
           max-attempts: 3
           retry-delay: 5s
