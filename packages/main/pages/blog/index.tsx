@@ -8,6 +8,7 @@ import { PostPreviewItem } from "modules/blog/components/PostPreviewItem";
 import { blog } from "modules/blog/blog.server";
 import PageHeader from "modules/base/PageHeader";
 import { generateRssFeed } from "utilities/rss";
+import { generateSitemap } from "utilities/sitemap";
 
 export interface BlogIndexProps {
     hasPreviousPage: boolean;
@@ -50,6 +51,7 @@ export default BlogIndex;
 export const getStaticProps: GetStaticProps = async () => {
     const posts = await blog.getAllPostsByDate();
     generateRssFeed(posts);
+    await generateSitemap();
 
     const postsToDisplay = posts.slice(0, PAGE_SIZE);
 

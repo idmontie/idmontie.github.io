@@ -9,10 +9,24 @@
             <link>https://idmontie.github.io</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 09 Sep 2026 17:33:51 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 16 Sep 2026 19:06:20 GMT</lastBuildDate>
         <atom:link href="https://idmontie.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 09 Sep 2026 17:33:51 GMT</pubDate>
+        <pubDate>Wed, 16 Sep 2026 19:06:20 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2026, idmontie]]></copyright>
+        <item>
+            <title><![CDATA[Keeping Humans in the Loop for Agent-Written Code]]></title>
+            <description><![CDATA[<p>I recently published a utility <a href="https://github.com/idmontie/human-agent-review-tool">Human Agent Review Tool</a> that helps keep track of the code I&#x27;ve actually reviewed while working with coding agents.</p>]]></description>
+            <link>https://idmontie.github.io/blog/post/2026-09-16-review-tool</link>
+            <guid isPermaLink="false">2026-09-16-review-tool</guid>
+            <pubDate>Wed, 16 Sep 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Extending the Domain of the Zeta Function]]></title>
+            <description><![CDATA[<p>In the previous article, we discussed the geometric series as an example of an infinite series that</p>]]></description>
+            <link>https://idmontie.github.io/blog/post/2026-09-15-extending-zeta-function-domain</link>
+            <guid isPermaLink="false">2026-09-15-extending-zeta-function-domain</guid>
+            <pubDate>Tue, 15 Sep 2026 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Are Crawlers Our Primary Consumers?]]></title>
             <description><![CDATA[<p>What happens to SEO when the crawler itself becomes one of your primary consumers?</p>]]></description>

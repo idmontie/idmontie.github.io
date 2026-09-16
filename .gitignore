@@ -196,4 +196,5 @@ migrations.json
 
 # End of https://www.toptal.com/developers/gitignore/api/nextjs,react,node
 .cursor/rules/nx-rules.mdc
+.cursor/mcp.json
 .github/instructions/nx.instructions.md
