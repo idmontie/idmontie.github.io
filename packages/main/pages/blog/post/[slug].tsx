@@ -9,6 +9,7 @@ import PageHeader from "modules/base/PageHeader";
 import { OutlineButton } from "modules/base/OutlineButton";
 import { PrimaryTag } from "modules/base/PrimaryTag";
 import { TagList } from "modules/base/Tag";
+import { absoluteSiteUrl } from "utilities/site";
 
 export interface BlogSlugProps {
     headTitle: string;
@@ -24,9 +25,6 @@ export interface BlogSlugProps {
     } | null;
 }
 
-// TODO use next/config to get the site url
-const SITE_URL = "https://idmontie.github.io";
-
 function BlogSlug({
     headTitle,
     headKeywords,
@@ -35,8 +33,9 @@ function BlogSlug({
     next,
 }: BlogSlugProps) {
     const imagePartialPath = post.frontmatter.image as string | undefined;
+    const postUrl = absoluteSiteUrl(`/blog/post/${post.slug}`);
     const imageUrl = imagePartialPath
-        ? `${SITE_URL}/media/${post.slug}/${imagePartialPath}`
+        ? absoluteSiteUrl(`/media/${post.slug}/${imagePartialPath}`)
         : undefined;
 
     const clientSideDate = useClientSideValue(() => {
@@ -57,10 +56,7 @@ function BlogSlug({
                 <meta property="og:title" content={headTitle} />
                 <meta property="og:description" content={post.excerptRaw} />
                 {imageUrl && <meta property="og:image" content={imageUrl} />}
-                <meta
-                    property="og:url"
-                    content={`${SITE_URL}/blog/post/${post.slug}`}
-                />
+                <meta property="og:url" content={postUrl} />
                 <meta property="og:type" content="article" />
                 <meta property="og:site_name" content="idmontie's Portfolio" />
                 <meta property="og:locale" content="en_US" />

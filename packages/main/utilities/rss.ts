@@ -2,11 +2,10 @@ import RSS from "rss";
 import fs from "fs";
 import path from "path";
 import { Post } from "nextjs-blog-lib";
+import { getSiteUrl } from "utilities/site";
 
 export function generateRssFeed(posts: Post[]) {
-    // Not the best to hardcode this, but it the blog
-    // isn't going anywhere
-    const siteUrl = "https://idmontie.github.io";
+    const siteUrl = getSiteUrl();
 
     const feed = new RSS({
         title: "idmontie's blog",

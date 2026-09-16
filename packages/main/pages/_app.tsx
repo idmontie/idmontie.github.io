@@ -1,7 +1,8 @@
 import { Hydrate } from "@tanstack/react-query";
 import { AppProviders } from "modules/app/components/AppProviders";
-import { AppProps } from "next/app";
+import App, { AppContext, AppProps } from "next/app";
 import Head from "next/head";
+import { canonicalUrlFromAsPath } from "utilities/site";
 import { GoogleAnalytics, event } from "nextjs-google-analytics";
 import { FullScreenErrorBoundary } from "modules/app/components/ErrorBoundary";
 import "./styles.css";
@@ -30,7 +31,12 @@ export function reportWebVitals({
     });
 }
 
-function CustomApp({ Component, pageProps }: AppProps) {
+function CustomApp({
+    Component,
+    pageProps,
+    canonicalPath = "/",
+}: AppProps & { canonicalPath?: string }) {
+    const canonicalHref = canonicalUrlFromAsPath(canonicalPath);
     return (
         <FullScreenErrorBoundary>
             <AppProviders>
@@ -47,6 +53,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
                             content="Starter kit for NextJS with Nx"
                         />
                         <meta charSet="utf8" />
+                        <link rel="canonical" href={canonicalHref} />
                     </Head>
                     <AppLayout>
                         <main className="app max-w-full">
@@ -58,5 +65,16 @@ function CustomApp({ Component, pageProps }: AppProps) {
         </FullScreenErrorBoundary>
     );
 }
+
+CustomApp.getInitialProps = async (appContext: AppContext) => {
+    const appProps = await App.getInitialProps(appContext);
+    const canonicalPath =
+        appContext.ctx.asPath ?? appContext.router.asPath ?? "/";
+
+    return {
+        ...appProps,
+        canonicalPath,
+    };
+};
 
 export default CustomApp;

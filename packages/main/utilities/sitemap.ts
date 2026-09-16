@@ -4,8 +4,7 @@ import { PAGE_SIZE } from "modules/blog/blog";
 import { blog } from "modules/blog/blog.server";
 import { groupPostsBySeries } from "modules/blog/series";
 import { projects } from "modules/portfolio/portfolio.server";
-
-const siteUrl = "https://idmontie.github.io";
+import { absoluteSiteUrl, getRobotsTxt } from "utilities/site";
 
 interface SitemapEntry {
     loc: string;
@@ -26,10 +25,6 @@ function toLastMod(date: string | Date): string {
     return d.toISOString().slice(0, 10);
 }
 
-function absoluteUrl(pathname: string): string {
-    return `${siteUrl}${pathname}`;
-}
-
 export async function generateSitemap(): Promise<void> {
     const entries: SitemapEntry[] = [];
 
@@ -40,40 +35,42 @@ export async function generateSitemap(): Promise<void> {
         "/blog/tag",
         "/blog/series",
     ]) {
-        entries.push({ loc: absoluteUrl(pathname) });
+        entries.push({ loc: absoluteSiteUrl(pathname) });
     }
 
     const posts = await blog.getAllPostsByDate();
     for (const post of posts) {
         entries.push({
-            loc: absoluteUrl(`/blog/post/${encodeURIComponent(post.slug)}`),
+            loc: absoluteSiteUrl(`/blog/post/${encodeURIComponent(post.slug)}`),
             lastmod: toLastMod(post.date),
         });
     }
 
     const numberOfPages = Math.ceil(posts.length / PAGE_SIZE);
     for (let page = 2; page <= numberOfPages; page++) {
-        entries.push({ loc: absoluteUrl(`/blog/${page}`) });
+        entries.push({ loc: absoluteSiteUrl(`/blog/${page}`) });
     }
 
     const groupedTags = await blog.groupPostsByTags();
     for (const tag of Object.keys(groupedTags)) {
         entries.push({
-            loc: absoluteUrl(`/blog/tag/${encodeURIComponent(tag)}`),
+            loc: absoluteSiteUrl(`/blog/tag/${encodeURIComponent(tag)}`),
         });
     }
 
     const groupedSeries = await groupPostsBySeries();
     for (const series of Object.keys(groupedSeries)) {
         entries.push({
-            loc: absoluteUrl(`/blog/series/${encodeURIComponent(series)}`),
+            loc: absoluteSiteUrl(`/blog/series/${encodeURIComponent(series)}`),
         });
     }
 
     const projectPosts = await projects.getAllPostsByDate();
     for (const project of projectPosts) {
         entries.push({
-            loc: absoluteUrl(`/projects/${encodeURIComponent(project.slug)}`),
+            loc: absoluteSiteUrl(
+                `/projects/${encodeURIComponent(project.slug)}`
+            ),
             lastmod: toLastMod(project.date),
         });
     }
@@ -98,4 +95,5 @@ ${urlEntries}
 
     const publicDir = path.join(process.cwd(), "public");
     fs.writeFileSync(path.join(publicDir, "sitemap.xml"), xml);
+    fs.writeFileSync(path.join(publicDir, "robots.txt"), getRobotsTxt());
 }
