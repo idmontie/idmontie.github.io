@@ -14,6 +14,9 @@ function cytoscapeUmdAlias() {
  **/
 const nextConfig = {
     output: "export",
+    images: {
+        unoptimized: true,
+    },
     nx: {
         // Set this to true if you would like to to use SVGR
         // See: https://github.com/gregberge/svgr

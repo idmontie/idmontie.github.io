@@ -1,4 +1,5 @@
 import { CardLink } from "modules/base/Card";
+import { ContentImageResponsive } from "modules/base/ContentImage";
 import { ComponentProps } from "react";
 
 /** MDX component map shared by server compile and client preview (no Mermaid). */
@@ -19,21 +20,26 @@ export const mdxComponentsBase = {
             </blockquote>
         );
     },
-    img: ({ src, alt, ...props }: { alt?: string; src: string }) => {
+    img: ({
+        src,
+        alt,
+        width,
+        height,
+        ...props
+    }: {
+        alt?: string;
+        src: string;
+        width?: number | string;
+        height?: number | string;
+    }) => {
         return (
-            <>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                    alt={alt ?? ""}
-                    src={src}
-                    {...props}
-                    style={{
-                        maxHeight: 500,
-                        margin: "auto",
-                        textAlign: "center",
-                    }}
-                />
-            </>
+            <ContentImageResponsive
+                alt={alt ?? ""}
+                src={src}
+                width={width != null ? Number(width) : undefined}
+                height={height != null ? Number(height) : undefined}
+                {...props}
+            />
         );
     },
     code: (props: ComponentProps<"code">) => {

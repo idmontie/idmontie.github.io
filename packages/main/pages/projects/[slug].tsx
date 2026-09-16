@@ -9,6 +9,7 @@ import { SecondaryButton } from "modules/base/SeconaryButton";
 import { PrimaryTag } from "modules/base/PrimaryTag";
 import { SecondaryTag } from "modules/base/SecondaryTag";
 import { TagList } from "modules/base/Tag";
+import { ContentImage } from "modules/base/ContentImage";
 import { OutlineButton } from "modules/base/OutlineButton";
 import Link from "next/link";
 
@@ -42,17 +43,24 @@ function ProjectSlug({ headTitle, project, next, previous }: ProjectSlugProps) {
 
                     <div className="mb-4 text-center">
                         <div className="relative m-auto w-full md:w-1/2">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img
+                            <div className="absolute inset-0 z-0" aria-hidden>
+                                <ContentImage
+                                    src={image}
+                                    alt=""
+                                    fill
+                                    priority
+                                    sizes="(max-width: 768px) 100vw, 50vw"
+                                    className="object-contain opacity-80 blur-xl"
+                                />
+                            </div>
+                            <ContentImage
                                 src={image}
                                 alt={project.title}
-                                className="absolute top-0 left-0 z-0 h-full w-full opacity-80 blur-xl"
-                            />
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img
-                                src={image}
-                                alt={project.title}
-                                className="relative z-10 m-auto"
+                                width={800}
+                                height={600}
+                                priority
+                                sizes="(max-width: 768px) 100vw, 50vw"
+                                className="relative z-10 m-auto h-auto w-full"
                             />
                         </div>
                     </div>
