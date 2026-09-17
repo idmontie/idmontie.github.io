@@ -9,9 +9,9 @@
             <link>https://idmontie.github.io</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 16 Sep 2026 23:39:26 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 16 Sep 2026 23:45:40 GMT</lastBuildDate>
         <atom:link href="https://idmontie.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 16 Sep 2026 23:39:26 GMT</pubDate>
+        <pubDate>Wed, 16 Sep 2026 23:45:40 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2026, idmontie]]></copyright>
         <item>
             <title><![CDATA[Keeping Humans in the Loop for Agent-Written Code]]></title>
@@ -300,7 +300,7 @@ about how to refactor and improve our APIs.</p>]]></description>
         </item>
         <item>
             <title><![CDATA[Clarity Hub Infer API]]></title>
-            <description><![CDATA[<p><img alt="Screen Shot 2023-01-07 at 3.57.30 PM.png" loading="lazy" width="1200" height="800" decoding="async" data-nimg="1" style="color:transparent;width:100%;height:auto;max-height:500px;margin:auto" src="/media/2023-01-07-clarity-hub-infer/Screen_Shot_2023-01-07_at_3.57.30_PM.png"/></p>]]></description>
+            <description><![CDATA[<p><img alt="Screen Shot 2023-01-07 at 3.57.30 PM.png" loading="lazy" width="1" height="1" decoding="async" data-nimg="1" class="mx-auto block !h-auto !w-auto max-h-[500px] max-w-full" style="color:transparent;width:auto;height:auto;max-width:100%;max-height:500px;margin:auto" src="/media/2023-01-07-clarity-hub-infer/Screen_Shot_2023-01-07_at_3.57.30_PM.png"/></p>]]></description>
             <link>https://idmontie.github.io/blog/post/2023-01-07-clarity-hub-infer</link>
             <guid isPermaLink="false">2023-01-07-clarity-hub-infer</guid>
             <pubDate>Sat, 07 Jan 2023 00:00:00 GMT</pubDate>
