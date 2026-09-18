@@ -4,19 +4,32 @@ import type { Post } from "nextjs-blog-lib";
 import { blog } from "modules/blog/blog.server";
 import PageHeader from "modules/base/PageHeader";
 import { PostPreviewItem } from "modules/blog/components/PostPreviewItem";
+import { blogTagHead } from "utilities/seo";
 
 export interface BlogTagProps {
     headTitle: string;
+    headDescription: string;
     headKeywords: string;
     tag: string;
     posts: Post[];
 }
 
-function BlogTag({ headTitle, headKeywords, tag, posts }: BlogTagProps) {
+function BlogTag({
+    headTitle,
+    headDescription,
+    headKeywords,
+    tag,
+    posts,
+}: BlogTagProps) {
     return (
         <div>
             <Head>
                 <title>{headTitle}</title>
+                <meta
+                    key="description"
+                    name="description"
+                    content={headDescription}
+                />
                 {/* Add tags as meta keywords */}
                 <meta name="keywords" content={headKeywords} />
             </Head>
@@ -61,10 +74,12 @@ export const getStaticProps: GetStaticProps = async (context) => {
     const grouped = await blog.groupPostsByTags();
 
     const posts = grouped[tag];
+    const { title, description } = blogTagHead(tag, posts.length);
 
     return {
         props: {
-            headTitle: `${tag} posts - idmontie's Portfolio`,
+            headTitle: title,
+            headDescription: description,
             // Generate on the server to avoid template string interpolation
             headKeywords: tag,
             tag,

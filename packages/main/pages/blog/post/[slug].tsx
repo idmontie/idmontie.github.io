@@ -11,9 +11,11 @@ import { PrimaryTag } from "modules/base/PrimaryTag";
 import { TagList } from "modules/base/Tag";
 import { absoluteSiteUrl } from "utilities/site";
 import { buildBlogPostingJsonLd } from "modules/blog/blog-post-json-ld";
+import { blogPostHead } from "utilities/seo";
 
 export interface BlogSlugProps {
     headTitle: string;
+    headDescription: string;
     headKeywords: string;
     post: Post;
     previous: {
@@ -28,6 +30,7 @@ export interface BlogSlugProps {
 
 function BlogSlug({
     headTitle,
+    headDescription,
     headKeywords,
     post,
     previous,
@@ -52,12 +55,16 @@ function BlogSlug({
         <div>
             <Head>
                 <title>{headTitle}</title>
-                <meta name="description" content={post.excerptRaw} />
+                <meta
+                    key="description"
+                    name="description"
+                    content={headDescription}
+                />
                 {/* Add tags as meta keywords */}
                 <meta name="keywords" content={headKeywords} />
 
                 <meta property="og:title" content={headTitle} />
-                <meta property="og:description" content={post.excerptRaw} />
+                <meta property="og:description" content={headDescription} />
                 {imageUrl && <meta property="og:image" content={imageUrl} />}
                 <meta property="og:url" content={postUrl} />
                 <meta property="og:type" content="article" />
@@ -173,10 +180,12 @@ export const getStaticProps: GetStaticProps = async (context) => {
     const slug = context.params?.slug as string;
 
     const postData = await blog.getPostBySlug(slug);
+    const { title, description } = blogPostHead(postData.post);
 
     return {
         props: {
-            headTitle: `${postData.post.title} - idmontie's Portfolio`,
+            headTitle: title,
+            headDescription: description,
             // Generate on the server to avoid template string interpolation
             headKeywords: postData.post.tags.join(", "),
             post: postData.post,

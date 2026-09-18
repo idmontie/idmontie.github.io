@@ -12,15 +12,23 @@ import { TagList } from "modules/base/Tag";
 import { ContentImage } from "modules/base/ContentImage";
 import { OutlineButton } from "modules/base/OutlineButton";
 import Link from "next/link";
+import { projectHead } from "utilities/seo";
 
 export interface ProjectSlugProps {
     headTitle: string;
+    headDescription: string;
     project: Post;
     next: Post | null;
     previous: Post | null;
 }
 
-function ProjectSlug({ headTitle, project, next, previous }: ProjectSlugProps) {
+function ProjectSlug({
+    headTitle,
+    headDescription,
+    project,
+    next,
+    previous,
+}: ProjectSlugProps) {
     const image = project.frontmatter.image as string;
     const viewLink = project.frontmatter.view_link as string | undefined;
     const githubLink = project.frontmatter.github_link as string | undefined;
@@ -35,7 +43,11 @@ function ProjectSlug({ headTitle, project, next, previous }: ProjectSlugProps) {
         <div>
             <Head>
                 <title>{headTitle}</title>
-                <meta name="description" content={project.excerptHTML} />
+                <meta
+                    key="description"
+                    name="description"
+                    content={headDescription}
+                />
             </Head>
             <article className="px-6 md:px-0">
                 <header>
@@ -163,10 +175,12 @@ export const getStaticProps: GetStaticProps = async (context) => {
     const slug = context.params?.slug as string;
 
     const postData = await projects.getPostBySlug(slug);
+    const { title, description } = projectHead(postData.post);
 
     return {
         props: {
-            headTitle: `${postData.post.title} - idmontie's Portfolio`,
+            headTitle: title,
+            headDescription: description,
             project: postData.post,
             next: postData.next,
             previous: postData.previous,

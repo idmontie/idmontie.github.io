@@ -2,6 +2,7 @@ import { Hydrate } from "@tanstack/react-query";
 import { AppProviders } from "modules/app/components/AppProviders";
 import App, { AppContext, AppProps } from "next/app";
 import Head from "next/head";
+import { DEFAULT_SITE_DESCRIPTION, DEFAULT_SITE_TITLE } from "utilities/seo";
 import { canonicalUrlFromAsPath } from "utilities/site";
 import { GoogleAnalytics, event } from "nextjs-google-analytics";
 import { FullScreenErrorBoundary } from "modules/app/components/ErrorBoundary";
@@ -47,10 +48,10 @@ function CustomApp({
                 {/* eslint-disable-next-line @typescript-eslint/no-unsafe-member-access */}
                 <Hydrate state={pageProps.dehydratedState}>
                     <Head>
-                        <title>idmontie&apos;s Portfolio</title>
+                        <title>{DEFAULT_SITE_TITLE}</title>
                         <meta
                             name="description"
-                            content="Starter kit for NextJS with Nx"
+                            content={DEFAULT_SITE_DESCRIPTION}
                         />
                         <meta charSet="utf8" />
                         <link rel="canonical" href={canonicalHref} />

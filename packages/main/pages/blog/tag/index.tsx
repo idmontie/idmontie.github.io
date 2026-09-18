@@ -4,6 +4,7 @@ import { blog } from "modules/blog/blog.server";
 import PageHeader from "modules/base/PageHeader";
 import Link from "next/link";
 import { Card } from "modules/base/Card";
+import { blogTagsIndexHead } from "utilities/seo";
 
 interface TagInfo {
     tag: string;
@@ -12,6 +13,7 @@ interface TagInfo {
 
 export interface BlogTagsProps {
     headTitle: string;
+    headDescription: string;
     tags: TagInfo[];
 }
 function getSizeOfTag(
@@ -25,13 +27,18 @@ function getSizeOfTag(
     return "text-xl";
 }
 
-function BlogTags({ headTitle, tags }: BlogTagsProps) {
+function BlogTags({ headTitle, headDescription, tags }: BlogTagsProps) {
     const sum = tags.reduce((acc, tag) => acc + tag.numberOfPosts, 0);
     const averageNumberOfPostsPerTag = sum / tags.length;
     return (
         <div>
             <Head>
                 <title>{headTitle}</title>
+                <meta
+                    key="description"
+                    name="description"
+                    content={headDescription}
+                />
             </Head>
             <div className="px-4">
                 <header>
@@ -100,9 +107,12 @@ export const getStaticProps: GetStaticProps = async (context) => {
             };
         });
 
+    const { title, description } = blogTagsIndexHead();
+
     return {
         props: {
-            headTitle: `Tags - idmontie's Portfolio`,
+            headTitle: title,
+            headDescription: description,
             tags,
         } as BlogTagsProps,
     };
