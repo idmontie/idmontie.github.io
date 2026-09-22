@@ -13,6 +13,7 @@ import {
     getReadingTimeMinutes,
 } from "modules/blog/components/FeaturedPost";
 import { absoluteSiteUrl } from "utilities/site";
+import PageHeader from "modules/base/PageHeader";
 
 export interface IndexProps {
     posts: FeaturedPostProps["post"][];
@@ -36,6 +37,9 @@ function Index({ posts, projects, homePageJsonLd }: IndexProps) {
                 />
             </Head>
             <div className="px-4">
+                <header>
+                    <PageHeader>Welcome - idmontie&apos;s Portfolio</PageHeader>
+                </header>
                 {featuredPost ? (
                     <section className="my-4">
                         <FeaturedPost post={featuredPost} />
