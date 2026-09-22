@@ -16,6 +16,10 @@
     <loc>https://idmontie.github.io/blog/series</loc>
   </url>
   <url>
+    <loc>https://idmontie.github.io/blog/post/2026-09-22-invariants-and-type-systems</loc>
+    <lastmod>2026-09-22</lastmod>
+  </url>
+  <url>
     <loc>https://idmontie.github.io/blog/post/2026-09-16-review-tool</loc>
     <lastmod>2026-09-16</lastmod>
   </url>
@@ -235,6 +239,12 @@
     <loc>https://idmontie.github.io/blog/6</loc>
   </url>
   <url>
+    <loc>https://idmontie.github.io/blog/tag/typescript</loc>
+  </url>
+  <url>
+    <loc>https://idmontie.github.io/blog/tag/react</loc>
+  </url>
+  <url>
     <loc>https://idmontie.github.io/blog/tag/ai</loc>
   </url>
   <url>
@@ -266,12 +276,6 @@
   </url>
   <url>
     <loc>https://idmontie.github.io/blog/tag/apis</loc>
-  </url>
-  <url>
-    <loc>https://idmontie.github.io/blog/tag/react</loc>
-  </url>
-  <url>
-    <loc>https://idmontie.github.io/blog/tag/typescript</loc>
   </url>
   <url>
     <loc>https://idmontie.github.io/blog/tag/gpus</loc>

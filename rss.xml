@@ -9,10 +9,17 @@
             <link>https://idmontie.github.io</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 18 Sep 2026 17:06:52 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 22 Sep 2026 23:11:31 GMT</lastBuildDate>
         <atom:link href="https://idmontie.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Fri, 18 Sep 2026 17:06:52 GMT</pubDate>
+        <pubDate>Tue, 22 Sep 2026 23:11:31 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2026, idmontie]]></copyright>
+        <item>
+            <title><![CDATA[Invariants and Type Systems]]></title>
+            <description><![CDATA[<p>My philosophy when designing APIs and libraries is to make it as easy to use as possible, but as difficult to use INCORRECTLY as possible. When I used to make plugins with jQuery, there would often be guards on functions to ensure that the data passed in met the function&#x27;s expectations:</p>]]></description>
+            <link>https://idmontie.github.io/blog/post/2026-09-22-invariants-and-type-systems</link>
+            <guid isPermaLink="false">2026-09-22-invariants-and-type-systems</guid>
+            <pubDate>Tue, 22 Sep 2026 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Keeping Humans in the Loop for Agent-Written Code]]></title>
             <description><![CDATA[<p>I recently published a utility <a href="https://github.com/idmontie/human-agent-review-tool">Human Agent Review Tool</a> that helps keep track of the code I&#x27;ve actually reviewed while working with coding agents.</p>]]></description>
