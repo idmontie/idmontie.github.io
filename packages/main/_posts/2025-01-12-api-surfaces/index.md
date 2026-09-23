@@ -1,6 +1,6 @@
 ---
 title: "APIs, Complexity, and Surfaces"
-tags: ["programming", "apis"]
+tags: [apis, design-systems, architecture]
 ---
 
 Maintaining growing software is challenging. Poorly architected APIs and

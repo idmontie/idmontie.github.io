@@ -1,6 +1,6 @@
 ---
 title: User Interface
-tags: ["user interface", "ui", "ux"]
+tags: [frontend]
 ---
 
 This post was originally on a blog I started for creating web applications. This post goes into User Interface design for web applications.

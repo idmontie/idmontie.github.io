@@ -1,6 +1,6 @@
 ---
 title: "GPUs and Best Buy Queues"
-tags: [technology, gpus]
+tags: [web]
 image: do-something.jpg
 ---
 

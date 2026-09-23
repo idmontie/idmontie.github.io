@@ -1,6 +1,6 @@
 ---
 title: "Toasts Are Harder Than They Look"
-tags: [accessibility, "user interface", frontend]
+tags: [frontend, accessibility]
 ---
 
 Accessibility problems usually have recognizable solutions. A button needs an accessible name, text needs sufficient contrast, and a modal needs sensible focus management.
@@ -126,3 +126,7 @@ The two implementations also didn’t answer some of the main UX concerns when u
 There are plenty of sites that use toasts though. My early example was Gmail, and that is used by millions of people around the world. Even Apple uses toasts. What is a notification on the Mac desktop if not a toast? We also have mobile notifications on Android and iOS devices that are basically toasts for different apps to get your attention.
 
 Toasts have their place, but they require considerably more thought than their simple UI suggests. The next time you reach for one, ask your team: is there a better way to convey the same information?
+
+EDIT:
+
+This continues to be a hot-topic among UX professionals. [Calm UI](https://maxschmitt.me/posts/calm) is a great article that explores the use of toasts and other UI patterns to create a more calm and user-friendly experience.

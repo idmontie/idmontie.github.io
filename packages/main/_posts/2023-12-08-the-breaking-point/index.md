@@ -1,6 +1,6 @@
 ---
 title: The Breaking Point - Understanding the performance of your systems
-tags: ["architecture", "scaling"]
+tags: [architecture, performance, scaling]
 image: ./splash.png
 ---
 

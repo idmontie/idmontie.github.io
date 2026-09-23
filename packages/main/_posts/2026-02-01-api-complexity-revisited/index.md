@@ -1,6 +1,6 @@
 ---
 title: "API Complexity Revisited"
-tags: [technology, programming, apis]
+tags: [react, apis, design-systems, architecture]
 ---
 
 In a previous article, I discussed [Surfaces](/blog/post/2025-01-12-api-surfaces) as an abstraction on APIs and how we could measure complexity as the size of that surfaces' perimeter – the "visible" part of the API to consumers. I shared this article with a colleague who I was actively working closely with on a new implementation of a design system. They has some interesting feedback on different ways of reducing complexity of certain APIs that I felt compelled to revisit this topic.

@@ -1,6 +1,6 @@
 ---
 title: "Forbidden Typescript: Spreading Type-holes"
-tags: [technology, programming, react, typescript]
+tags: [typescript, react, programming]
 series: "Forbidden Typescript"
 ---
 

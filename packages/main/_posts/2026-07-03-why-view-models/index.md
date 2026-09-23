@@ -1,6 +1,6 @@
 ---
 title: "Why view models?"
-tags: [technology, programming]
+tags: [typescript, react, architecture, frontend]
 ---
 
 When writing React code, we often need to pull data from an API and manipulate that data to better match how we want to present it. Now that React hooks are ubiquitous, I have seen a lot of that data manipulation move into hooks that get re-used in multiple components.

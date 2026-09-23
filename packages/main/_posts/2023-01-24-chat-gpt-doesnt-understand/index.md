@@ -1,6 +1,6 @@
 ---
 title: ChatGPT Doesn't Understand
-tags: ["openai", "chatgpt"]
+tags: [ai]
 ---
 
 Looks like everyone is trying to discover ChatGPT’s limitations. In one article I read, the author asked whether [ChatGPT can play 20 questions](https://medium.com/@theworldaccordingtocgpt/chatgpt-can-play-20-questions-7911405f7aff). The human in this scenario tried to play 20 questions with ChatGPT, and found that they needed to guide the AI to ask questions. From my perspective, it looked more like a failure to engineer the initial prompt correctly.

@@ -1,6 +1,6 @@
 ---
 title: "Keeping Humans in the Loop for Agent-Written Code"
-tags: ["ai", "coding", "review"]
+tags: [ai, developer-tools]
 ---
 
 I recently published a utility [Human Agent Review Tool](https://github.com/idmontie/human-agent-review-tool) that helps keep track of the code I've actually reviewed while working with coding agents.

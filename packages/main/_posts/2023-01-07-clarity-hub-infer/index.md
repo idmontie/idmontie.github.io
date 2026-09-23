@@ -1,6 +1,6 @@
 ---
 title: Clarity Hub Infer API
-tags: [nlp, "machine learning"]
+tags: [nlp, machine-learning, apis]
 ---
 
 ![Screen Shot 2023-01-07 at 3.57.30 PM.png](./Screen_Shot_2023-01-07_at_3.57.30_PM.png)

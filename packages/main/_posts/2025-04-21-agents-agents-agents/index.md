@@ -1,6 +1,6 @@
 ---
 title: "Agents, Agents, Agents"
-tags: ["ai", "apis"]
+tags: [ai, apis]
 ---
 
 In 2008, Steve Ballmer once famously said “[Developers, developers, developers](https://www.youtube.com/watch?v=Vhh_GeBPOhs)” in a highly meme-able video. He was trying to emphasize the importance of software developers in business and that their importance was only going to continue to grow. Microsoft shifted to try to support software developers, noticing that if they supported developers, they would build better software for Windows, which in turn would make people want to use Windows.

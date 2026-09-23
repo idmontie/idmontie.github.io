@@ -1,6 +1,6 @@
 ---
 title: Invariants and Type Systems
-tags: ["typescript", "react"]
+tags: [typescript, react, design-systems]
 ---
 
 My philosophy when designing APIs and libraries is to make it as easy to use as possible, but as difficult to use INCORRECTLY as possible. When I used to make plugins with jQuery, there would often be guards on functions to ensure that the data passed in met the function's expectations:

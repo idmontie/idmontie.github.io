@@ -1,6 +1,6 @@
 ---
 title: Security
-tags: [security]
+tags: [security, web]
 ---
 
 This post was originally on a blog I started for creating web applications. This post goes into security for web applications.

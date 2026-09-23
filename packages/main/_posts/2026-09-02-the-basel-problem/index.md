@@ -1,6 +1,6 @@
 ---
 title: "The Basel Problem"
-tags: ["mathematics"]
+tags: [mathematics]
 series: "Introduction to the Riemann Hypothesis"
 ---
 

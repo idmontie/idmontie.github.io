@@ -1,6 +1,6 @@
 ---
 title: "What Makes a Good TODO?"
-tags: [technology, programming]
+tags: [programming]
 ---
 
 We all end up doing it: `// TODO implement this function`, or `// TODO handle this edge case`. Often as we write code, we use `TODO`s to track ephemeral work, and typically clean them up as we go along. But sometimes we keep that `TODO` around, and it ends up in main. Then what?

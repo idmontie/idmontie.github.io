@@ -1,6 +1,6 @@
 ---
 title: "On the Addition of Fractions, by Petri Mengoli"
-tags: ["mathematics", "translation"]
+tags: [mathematics]
 series: "Introduction to the Riemann Hypothesis"
 ---
 

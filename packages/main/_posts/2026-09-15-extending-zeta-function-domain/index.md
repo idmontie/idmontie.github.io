@@ -1,6 +1,6 @@
 ---
 title: Extending the Domain of the Zeta Function
-tags: ["mathematics"]
+tags: [mathematics]
 series: "Introduction to the Riemann Hypothesis"
 ---
 

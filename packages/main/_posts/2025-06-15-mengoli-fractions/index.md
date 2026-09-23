@@ -1,6 +1,6 @@
 ---
 title: "Petri Mengoli Fraction Inequality"
-tags: ["mathematics", "translation"]
+tags: [mathematics]
 series: "Introduction to the Riemann Hypothesis"
 ---
 

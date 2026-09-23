@@ -1,6 +1,6 @@
 ---
 title: Enforcing Localization through Types
-tags: ["typescript", "react"]
+tags: [typescript, react, frontend]
 ---
 
 When building web applications, enforcing that strings be localized to the user's preferred language can sometimes be achieved via lint rules. But what if we could enforce proper localization using types in TypeScript?
