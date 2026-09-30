@@ -9,10 +9,17 @@
             <link>https://idmontie.github.io</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 23 Sep 2026 21:04:30 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Sep 2026 22:26:13 GMT</lastBuildDate>
         <atom:link href="https://idmontie.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 23 Sep 2026 21:04:30 GMT</pubDate>
+        <pubDate>Wed, 30 Sep 2026 22:26:13 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2026, idmontie]]></copyright>
+        <item>
+            <title><![CDATA[Speeding Up Embedding Comparisons]]></title>
+            <description><![CDATA[<p>As I was reading through the Petar Maymounkov and David Mazières paper <a href="https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf">&quot;Kademlia: A Peer-to-peer Information System Based on the XOR Metric&quot;</a>, I was interested in the application of this XOR metric on work I had previously done on <a href="/blog/post/2023-07-01-fast-embedding-lookingup">clustering embeddings</a>. When implementing the Infer API for Clarity Hub, we focused on using the distance between vectors as a way to cluster utterances together into a topic. We did this via <a href="https://en.wikipedia.org/wiki/Euclidean_distance">Euclidean distance</a> between vectors, which we had to compare against all other vectors within the space.</p>]]></description>
+            <link>https://idmontie.github.io/blog/post/2026-09-30-speeding-up-embedding-comparisons</link>
+            <guid isPermaLink="false">2026-09-30-speeding-up-embedding-comparisons</guid>
+            <pubDate>Wed, 30 Sep 2026 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Invariants and Type Systems]]></title>
             <description><![CDATA[<p>My philosophy when designing APIs and libraries is to make it as easy to use as possible, but as difficult to use INCORRECTLY as possible. When I used to make plugins with jQuery, there would often be guards on functions to ensure that the data passed in met the function&#x27;s expectations:</p>]]></description>
