@@ -103,6 +103,15 @@ pre code {
     margin-top: 0.25rem;
 }
 
+.prose table {
+    margin: 2rem auto;
+}
+
+.prose table td,
+.prose table th {
+    padding: 0.25rem;
+}
+
 .messageText {
     fill: black !important;
 }

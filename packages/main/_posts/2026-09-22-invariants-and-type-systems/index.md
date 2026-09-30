@@ -146,7 +146,7 @@ We encode this information with the type system via a union of mutually exclusiv
 Here is a more advanced example that demonstrates how tagged types can be used to enforce invariants.
 We define a `PositiveNumber` and `EvenNumber` tagged types, and then use them to enforce that a number is both positive and even.
 
-```jsx
+```tsx
 function invariant(condition: boolean, message: string): asserts condition {
   const isProduction = false; // process.env.NODE_ENV === 'production';
 
