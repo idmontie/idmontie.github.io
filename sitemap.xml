@@ -16,6 +16,10 @@
     <loc>https://idmontie.github.io/blog/series</loc>
   </url>
   <url>
+    <loc>https://idmontie.github.io/blog/post/2026-10-27-effective-code-reviews</loc>
+    <lastmod>2026-10-27</lastmod>
+  </url>
+  <url>
     <loc>https://idmontie.github.io/blog/post/2026-09-30-speeding-up-embedding-comparisons</loc>
     <lastmod>2026-09-30</lastmod>
   </url>
@@ -243,16 +247,19 @@
     <loc>https://idmontie.github.io/blog/6</loc>
   </url>
   <url>
-    <loc>https://idmontie.github.io/blog/tag/performance</loc>
+    <loc>https://idmontie.github.io/blog/tag/programming</loc>
+  </url>
+  <url>
+    <loc>https://idmontie.github.io/blog/tag/ai</loc>
   </url>
   <url>
     <loc>https://idmontie.github.io/blog/tag/architecture</loc>
   </url>
   <url>
-    <loc>https://idmontie.github.io/blog/tag/scaling</loc>
+    <loc>https://idmontie.github.io/blog/tag/performance</loc>
   </url>
   <url>
-    <loc>https://idmontie.github.io/blog/tag/programming</loc>
+    <loc>https://idmontie.github.io/blog/tag/scaling</loc>
   </url>
   <url>
     <loc>https://idmontie.github.io/blog/tag/typescript</loc>
@@ -262,9 +269,6 @@
   </url>
   <url>
     <loc>https://idmontie.github.io/blog/tag/design-systems</loc>
-  </url>
-  <url>
-    <loc>https://idmontie.github.io/blog/tag/ai</loc>
   </url>
   <url>
     <loc>https://idmontie.github.io/blog/tag/developer-tools</loc>

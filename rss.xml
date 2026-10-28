@@ -9,10 +9,18 @@
             <link>https://idmontie.github.io</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 30 Sep 2026 22:26:13 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 28 Oct 2026 04:23:35 GMT</lastBuildDate>
         <atom:link href="https://idmontie.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 30 Sep 2026 22:26:13 GMT</pubDate>
+        <pubDate>Wed, 28 Oct 2026 04:23:35 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2026, idmontie]]></copyright>
+        <item>
+            <title><![CDATA[From Wasted Time to Effective Code Reviews]]></title>
+            <description><![CDATA[<p>A monorepo has many advantages in the modern era of computing - a single engineer can make cross-domain and cross-platform changes in a single PR, LLMs and agents can access context of the entire stack in order to make code changes, and it is easier to determine the impact of a change to consumers.</p>
+<p>But a downside to the monorepo is that the amount of Pull Requests can become unwieldy. The sheer number of engineers writing code, making Pull Requests, and asking for reviews a day is growing even faster now that a majority of code is being written with at least some help by AI agents.</p>]]></description>
+            <link>https://idmontie.github.io/blog/post/2026-10-27-effective-code-reviews</link>
+            <guid isPermaLink="false">2026-10-27-effective-code-reviews</guid>
+            <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Speeding Up Embedding Comparisons]]></title>
             <description><![CDATA[<p>As I was reading through the Petar Maymounkov and David Mazières paper <a href="https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf">&quot;Kademlia: A Peer-to-peer Information System Based on the XOR Metric&quot;</a>, I was interested in the application of this XOR metric on work I had previously done on <a href="/blog/post/2023-07-01-fast-embedding-lookingup">clustering embeddings</a>. When implementing the Infer API for Clarity Hub, we focused on using the distance between vectors as a way to cluster utterances together into a topic. We did this via <a href="https://en.wikipedia.org/wiki/Euclidean_distance">Euclidean distance</a> between vectors, which we had to compare against all other vectors within the space.</p>]]></description>
