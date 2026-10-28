@@ -185,3 +185,9 @@ $$
 Where a transcendental number is a number that is not algebraic, meaning it is not a solution to any polynomial equation with rational coefficients.
 
 The Basel problem is a simple problem that can be solved using a few tricks that Euler already knew from his many other discoveries and mathematical research. It is a beautiful example of how mathematics can be used to solve problems and how different techniques can be used to solve the same problem.
+
+EDIT:
+
+In my post [On the Addition of Fractions](/blog/post/2025-03-16-on-the-addition-of-fractions), I make a comment about how
+some anime characters named Zundamon and Metan explained how Euler approached the Basel problem. Yet again, these two
+characters have released a video related to my posts - the [Weierstrass factorization theorem](https://www.youtube.com/watch?v=y12QM6d8pO0). I recommend watching them if you are interested in the topic. The style is not everyone's cup of tea.
