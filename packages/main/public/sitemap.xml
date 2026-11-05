@@ -16,6 +16,14 @@
     <loc>https://idmontie.github.io/blog/series</loc>
   </url>
   <url>
+    <loc>https://idmontie.github.io/blog/post/2026-11-04-building-accessibility-into-the-pipeline</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://idmontie.github.io/blog/post/2026-10-27-effective-code-reviews</loc>
+    <lastmod>2026-10-27</lastmod>
+  </url>
+  <url>
     <loc>https://idmontie.github.io/blog/post/2026-09-30-speeding-up-embedding-comparisons</loc>
     <lastmod>2026-09-30</lastmod>
   </url>
@@ -243,40 +251,7 @@
     <loc>https://idmontie.github.io/blog/6</loc>
   </url>
   <url>
-    <loc>https://idmontie.github.io/blog/tag/performance</loc>
-  </url>
-  <url>
-    <loc>https://idmontie.github.io/blog/tag/architecture</loc>
-  </url>
-  <url>
-    <loc>https://idmontie.github.io/blog/tag/scaling</loc>
-  </url>
-  <url>
-    <loc>https://idmontie.github.io/blog/tag/programming</loc>
-  </url>
-  <url>
-    <loc>https://idmontie.github.io/blog/tag/typescript</loc>
-  </url>
-  <url>
-    <loc>https://idmontie.github.io/blog/tag/react</loc>
-  </url>
-  <url>
-    <loc>https://idmontie.github.io/blog/tag/design-systems</loc>
-  </url>
-  <url>
-    <loc>https://idmontie.github.io/blog/tag/ai</loc>
-  </url>
-  <url>
-    <loc>https://idmontie.github.io/blog/tag/developer-tools</loc>
-  </url>
-  <url>
-    <loc>https://idmontie.github.io/blog/tag/mathematics</loc>
-  </url>
-  <url>
-    <loc>https://idmontie.github.io/blog/tag/frontend</loc>
-  </url>
-  <url>
-    <loc>https://idmontie.github.io/blog/tag/seo</loc>
+    <loc>https://idmontie.github.io/blog/tag/apis</loc>
   </url>
   <url>
     <loc>https://idmontie.github.io/blog/tag/web</loc>
@@ -285,25 +260,64 @@
     <loc>https://idmontie.github.io/blog/tag/accessibility</loc>
   </url>
   <url>
-    <loc>https://idmontie.github.io/blog/tag/apis</loc>
-  </url>
-  <url>
-    <loc>https://idmontie.github.io/blog/tag/startups</loc>
-  </url>
-  <url>
-    <loc>https://idmontie.github.io/blog/tag/blockchain</loc>
+    <loc>https://idmontie.github.io/blog/tag/performance</loc>
   </url>
   <url>
     <loc>https://idmontie.github.io/blog/tag/security</loc>
   </url>
   <url>
-    <loc>https://idmontie.github.io/blog/tag/game-development</loc>
+    <loc>https://idmontie.github.io/blog/tag/seo</loc>
+  </url>
+  <url>
+    <loc>https://idmontie.github.io/blog/tag/developer-tools</loc>
+  </url>
+  <url>
+    <loc>https://idmontie.github.io/blog/tag/frontend</loc>
+  </url>
+  <url>
+    <loc>https://idmontie.github.io/blog/tag/typescript</loc>
   </url>
   <url>
     <loc>https://idmontie.github.io/blog/tag/nlp</loc>
   </url>
   <url>
     <loc>https://idmontie.github.io/blog/tag/machine-learning</loc>
+  </url>
+  <url>
+    <loc>https://idmontie.github.io/blog/tag/architecture</loc>
+  </url>
+  <url>
+    <loc>https://idmontie.github.io/blog/tag/programming</loc>
+  </url>
+  <url>
+    <loc>https://idmontie.github.io/blog/tag/ai</loc>
+  </url>
+  <url>
+    <loc>https://idmontie.github.io/blog/tag/blockchain</loc>
+  </url>
+  <url>
+    <loc>https://idmontie.github.io/blog/tag/game-development</loc>
+  </url>
+  <url>
+    <loc>https://idmontie.github.io/blog/tag/design-systems</loc>
+  </url>
+  <url>
+    <loc>https://idmontie.github.io/blog/tag/scaling</loc>
+  </url>
+  <url>
+    <loc>https://idmontie.github.io/blog/tag/react</loc>
+  </url>
+  <url>
+    <loc>https://idmontie.github.io/blog/tag/startups</loc>
+  </url>
+  <url>
+    <loc>https://idmontie.github.io/blog/tag/mathematics</loc>
+  </url>
+  <url>
+    <loc>https://idmontie.github.io/blog/tag/pipeline</loc>
+  </url>
+  <url>
+    <loc>https://idmontie.github.io/blog/tag/development</loc>
   </url>
   <url>
     <loc>https://idmontie.github.io/blog/series/Introduction%20to%20the%20Riemann%20Hypothesis</loc>
