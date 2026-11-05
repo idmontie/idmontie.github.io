@@ -9,10 +9,17 @@
             <link>https://idmontie.github.io</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 28 Oct 2026 04:23:35 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 05 Nov 2026 04:26:36 GMT</lastBuildDate>
         <atom:link href="https://idmontie.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 28 Oct 2026 04:23:35 GMT</pubDate>
+        <pubDate>Thu, 05 Nov 2026 04:26:36 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2026, idmontie]]></copyright>
+        <item>
+            <title><![CDATA[Building Accessibility into the Pipeline]]></title>
+            <description><![CDATA[<p>Throughput is the name of the game now that the majority of engineers are using AI coding agents to write code. Delivering high quality product experiences that still provide accessible functionality is as important as ever.</p>]]></description>
+            <link>https://idmontie.github.io/blog/post/2026-11-04-building-accessibility-into-the-pipeline</link>
+            <guid isPermaLink="false">2026-11-04-building-accessibility-into-the-pipeline</guid>
+            <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[From Wasted Time to Effective Code Reviews]]></title>
             <description><![CDATA[<p>A monorepo has many advantages in the modern era of computing - a single engineer can make cross-domain and cross-platform changes in a single PR, LLMs and agents can access context of the entire stack in order to make code changes, and it is easier to determine the impact of a change to consumers.</p>
