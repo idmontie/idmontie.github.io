@@ -16,6 +16,10 @@
     <loc>https://idmontie.github.io/blog/series</loc>
   </url>
   <url>
+    <loc>https://idmontie.github.io/blog/post/2026-11-10-constraining-component-api-design</loc>
+    <lastmod>2026-11-10</lastmod>
+  </url>
+  <url>
     <loc>https://idmontie.github.io/blog/post/2026-11-04-building-accessibility-into-the-pipeline</loc>
     <lastmod>2026-11-04</lastmod>
   </url>
@@ -251,6 +255,18 @@
     <loc>https://idmontie.github.io/blog/6</loc>
   </url>
   <url>
+    <loc>https://idmontie.github.io/blog/tag/react</loc>
+  </url>
+  <url>
+    <loc>https://idmontie.github.io/blog/tag/design-systems</loc>
+  </url>
+  <url>
+    <loc>https://idmontie.github.io/blog/tag/apis</loc>
+  </url>
+  <url>
+    <loc>https://idmontie.github.io/blog/tag/ai</loc>
+  </url>
+  <url>
     <loc>https://idmontie.github.io/blog/tag/accessibility</loc>
   </url>
   <url>
@@ -266,9 +282,6 @@
     <loc>https://idmontie.github.io/blog/tag/programming</loc>
   </url>
   <url>
-    <loc>https://idmontie.github.io/blog/tag/ai</loc>
-  </url>
-  <url>
     <loc>https://idmontie.github.io/blog/tag/architecture</loc>
   </url>
   <url>
@@ -281,12 +294,6 @@
     <loc>https://idmontie.github.io/blog/tag/typescript</loc>
   </url>
   <url>
-    <loc>https://idmontie.github.io/blog/tag/react</loc>
-  </url>
-  <url>
-    <loc>https://idmontie.github.io/blog/tag/design-systems</loc>
-  </url>
-  <url>
     <loc>https://idmontie.github.io/blog/tag/developer-tools</loc>
   </url>
   <url>
@@ -297,9 +304,6 @@
   </url>
   <url>
     <loc>https://idmontie.github.io/blog/tag/seo</loc>
-  </url>
-  <url>
-    <loc>https://idmontie.github.io/blog/tag/apis</loc>
   </url>
   <url>
     <loc>https://idmontie.github.io/blog/tag/startups</loc>

@@ -9,10 +9,17 @@
             <link>https://idmontie.github.io</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 05 Nov 2026 04:26:36 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 12 Nov 2026 05:50:15 GMT</lastBuildDate>
         <atom:link href="https://idmontie.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Thu, 05 Nov 2026 04:26:36 GMT</pubDate>
+        <pubDate>Thu, 12 Nov 2026 05:50:15 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2026, idmontie]]></copyright>
+        <item>
+            <title><![CDATA[Constraining Component API Design]]></title>
+            <description><![CDATA[<p>Which is better – a single Button component with lots of props, or splitting that button component up into a PrimaryButton, SecondaryButton, OutlineButton, etc? Having worked on implementing and restructuring several design systems at this point, I eventually came around to an API design philosophy that I didn’t really agree with when I first started picking up React.</p>]]></description>
+            <link>https://idmontie.github.io/blog/post/2026-11-10-constraining-component-api-design</link>
+            <guid isPermaLink="false">2026-11-10-constraining-component-api-design</guid>
+            <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Building Accessibility into the Pipeline]]></title>
             <description><![CDATA[<p>Throughput is the name of the game now that the majority of engineers are using AI coding agents to write code. Delivering high quality product experiences that still provide accessible functionality is as important as ever.</p>]]></description>
